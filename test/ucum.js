@@ -10,11 +10,11 @@ describe('Ucum parser', function(){
   });
   it('Should parse units: kilometers per hour', function(){
     r = ucum.parse('km/h');
-    r.should.eql({ value: 1000, units: { m: 1, h: -1 } });
+    r.should.eql({ value: 1000, units: { m: 1, h: -1 }, metadata: { m: { prefix: 'k' } } } );
   });
   it('Should canonicalize units: inches per year', function(){
     r = ucum.canonicalize('[in_i]/a');
-    r.should.eql({ value: 8.048774304763354e-10, units: { m: 1, s: -1 } } );
+    r.should.eql({ value: 8.048774304763354e-10, units: { m: 1, s: -1 }, metadata: { m: { prefix: 'c' } } } );
   });
   it('Can "convert days"', function(){
     r = ucum.convert(1, 'd', 's');
