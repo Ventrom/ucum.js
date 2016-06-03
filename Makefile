@@ -18,10 +18,13 @@ ucum-essence.xml: lib/codegen.js
 prefixMetadata.json: lib/codegen.js
 	node lib/codegen.js  --prefixMetadata > generated/prefixMetadata.json
 
+unitMetadata.json: lib/codegen.js
+	node lib/codegen.js  --unitMetadata > generated/unitMetadata.json
+
 ucum-parser.peg: lib/codegen.js
 	node lib/codegen.js  --peg  > generated/ucum-parser.peg
 
-ucum-parser.js: ucum-parser.peg  metrics.json equivalents.json prefixes.json ucum-essence.xml prefixMetadata.json tests.json
+ucum-parser.js: ucum-parser.peg  metrics.json equivalents.json prefixes.json ucum-essence.xml prefixMetadata.json unitMetadata.json tests.json
 	./node_modules/pegjs/bin/pegjs  -o size generated/ucum-parser.peg   generated/ucum-parser.js
 
 browserified: ucum-parser.js

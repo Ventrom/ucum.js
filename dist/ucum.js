@@ -1,4 +1,4 @@
-(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 module.exports={
   "10*": {
     "value": 10,
@@ -1207,6 +1207,370 @@ module.exports={"mol":true,"sr":true,"Hz":true,"N":true,"Pa":true,"J":true,"W":t
 
 },{}],3:[function(require,module,exports){
 module.exports={
+  "Y": {
+    "CODE": "YA",
+    "names": [
+      "yotta"
+    ],
+    "printSymbols": [
+      "Y"
+    ],
+    "values": [
+      {
+        "printable": "1 &#215; 10<sup>24</sup>",
+        "numeric": 1e+24
+      }
+    ]
+  },
+  "Z": {
+    "CODE": "ZA",
+    "names": [
+      "zetta"
+    ],
+    "printSymbols": [
+      "Z"
+    ],
+    "values": [
+      {
+        "printable": "1 &#215; 10<sup>21</sup>",
+        "numeric": 1e+21
+      }
+    ]
+  },
+  "E": {
+    "CODE": "EX",
+    "names": [
+      "exa"
+    ],
+    "printSymbols": [
+      "E"
+    ],
+    "values": [
+      {
+        "printable": "1 &#215; 10<sup>18</sup>",
+        "numeric": 1000000000000000000
+      }
+    ]
+  },
+  "P": {
+    "CODE": "PT",
+    "names": [
+      "peta"
+    ],
+    "printSymbols": [
+      "P"
+    ],
+    "values": [
+      {
+        "printable": "1 &#215; 10<sup>15</sup>",
+        "numeric": 1000000000000000
+      }
+    ]
+  },
+  "T": {
+    "CODE": "TR",
+    "names": [
+      "tera"
+    ],
+    "printSymbols": [
+      "T"
+    ],
+    "values": [
+      {
+        "printable": "1 &#215; 10<sup>12</sup>",
+        "numeric": 1000000000000
+      }
+    ]
+  },
+  "G": {
+    "CODE": "GA",
+    "names": [
+      "giga"
+    ],
+    "printSymbols": [
+      "G"
+    ],
+    "values": [
+      {
+        "printable": "1 &#215; 10<sup>9</sup>",
+        "numeric": 1000000000
+      }
+    ]
+  },
+  "M": {
+    "CODE": "MA",
+    "names": [
+      "mega"
+    ],
+    "printSymbols": [
+      "M"
+    ],
+    "values": [
+      {
+        "printable": "1 &#215; 10<sup>6</sup>",
+        "numeric": 1000000
+      }
+    ]
+  },
+  "k": {
+    "CODE": "K",
+    "names": [
+      "kilo"
+    ],
+    "printSymbols": [
+      "k"
+    ],
+    "values": [
+      {
+        "printable": "1 &#215; 10<sup>3</sup>",
+        "numeric": 1000
+      }
+    ]
+  },
+  "h": {
+    "CODE": "H",
+    "names": [
+      "hecto"
+    ],
+    "printSymbols": [
+      "h"
+    ],
+    "values": [
+      {
+        "printable": "1 &#215; 10<sup>2</sup>",
+        "numeric": 100
+      }
+    ]
+  },
+  "da": {
+    "CODE": "DA",
+    "names": [
+      "deka"
+    ],
+    "printSymbols": [
+      "da"
+    ],
+    "values": [
+      {
+        "printable": "1 &#215; 10<sup>1</sup>",
+        "numeric": 10
+      }
+    ]
+  },
+  "d": {
+    "CODE": "D",
+    "names": [
+      "deci"
+    ],
+    "printSymbols": [
+      "d"
+    ],
+    "values": [
+      {
+        "printable": "1 &#215; 10<sup>-1</sup>",
+        "numeric": 0.1
+      }
+    ]
+  },
+  "c": {
+    "CODE": "C",
+    "names": [
+      "centi"
+    ],
+    "printSymbols": [
+      "c"
+    ],
+    "values": [
+      {
+        "printable": "1 &#215; 10<sup>-2</sup>",
+        "numeric": 0.01
+      }
+    ]
+  },
+  "m": {
+    "CODE": "M",
+    "names": [
+      "milli"
+    ],
+    "printSymbols": [
+      "m"
+    ],
+    "values": [
+      {
+        "printable": "1 &#215; 10<sup>-3</sup>",
+        "numeric": 0.001
+      }
+    ]
+  },
+  "u": {
+    "CODE": "U",
+    "names": [
+      "micro"
+    ],
+    "printSymbols": [
+      "&#956;"
+    ],
+    "values": [
+      {
+        "printable": "1 &#215; 10<sup>-6</sup>",
+        "numeric": 0.000001
+      }
+    ]
+  },
+  "n": {
+    "CODE": "N",
+    "names": [
+      "nano"
+    ],
+    "printSymbols": [
+      "n"
+    ],
+    "values": [
+      {
+        "printable": "1 &#215; 10<sup>-9</sup>",
+        "numeric": 1e-9
+      }
+    ]
+  },
+  "p": {
+    "CODE": "P",
+    "names": [
+      "pico"
+    ],
+    "printSymbols": [
+      "p"
+    ],
+    "values": [
+      {
+        "printable": "1 &#215; 10<sup>-12</sup>",
+        "numeric": 1e-12
+      }
+    ]
+  },
+  "f": {
+    "CODE": "F",
+    "names": [
+      "femto"
+    ],
+    "printSymbols": [
+      "f"
+    ],
+    "values": [
+      {
+        "printable": "1 &#215; 10<sup>-15</sup>",
+        "numeric": 1e-15
+      }
+    ]
+  },
+  "a": {
+    "CODE": "A",
+    "names": [
+      "atto"
+    ],
+    "printSymbols": [
+      "a"
+    ],
+    "values": [
+      {
+        "printable": "1 &#215; 10<sup>-18</sup>",
+        "numeric": 1e-18
+      }
+    ]
+  },
+  "z": {
+    "CODE": "ZO",
+    "names": [
+      "zepto"
+    ],
+    "printSymbols": [
+      "z"
+    ],
+    "values": [
+      {
+        "printable": "1 &#215; 10<sup>-21</sup>",
+        "numeric": 1e-21
+      }
+    ]
+  },
+  "y": {
+    "CODE": "YO",
+    "names": [
+      "yocto"
+    ],
+    "printSymbols": [
+      "y"
+    ],
+    "values": [
+      {
+        "printable": "1 &#215; 10<sup>-24</sup>",
+        "numeric": 1e-24
+      }
+    ]
+  },
+  "Ki": {
+    "CODE": "KIB",
+    "names": [
+      "kibi"
+    ],
+    "printSymbols": [
+      "Ki"
+    ],
+    "values": [
+      {
+        "printable": "1024",
+        "numeric": 1024
+      }
+    ]
+  },
+  "Mi": {
+    "CODE": "MIB",
+    "names": [
+      "mebi"
+    ],
+    "printSymbols": [
+      "Mi"
+    ],
+    "values": [
+      {
+        "printable": "1048576",
+        "numeric": 1048576
+      }
+    ]
+  },
+  "Gi": {
+    "CODE": "GIB",
+    "names": [
+      "gibi"
+    ],
+    "printSymbols": [
+      "Gi"
+    ],
+    "values": [
+      {
+        "printable": "1073741824",
+        "numeric": 1073741824
+      }
+    ]
+  },
+  "Ti": {
+    "CODE": "TIB",
+    "names": [
+      "tebi"
+    ],
+    "printSymbols": [
+      "Ti"
+    ],
+    "values": [
+      {
+        "printable": "1099511627776",
+        "numeric": 1099511627776
+      }
+    ]
+  }
+}
+
+},{}],4:[function(require,module,exports){
+module.exports={
   "Y": 1e+24,
   "Z": 1e+21,
   "E": 1000000000000000000,
@@ -1233,7 +1597,7 @@ module.exports={
   "Ti": 1099511627776
 }
 
-},{}],4:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 module.exports = (function() {
   /*
    * Generated by PEG.js 0.8.0.
@@ -1307,7 +1671,20 @@ module.exports = (function() {
           function(p, a) {return(p && !ismetric(a));},
           function(p, a) {
             var ret = a;
-            if (p) ret.value = ret.value * prefixes[p];
+            if (p){
+              ret.value = ret.value * prefixes[p];
+              ret.metadata = {};
+              var u = Object.keys(ret.units)[0];
+              if(prefixMetadata[p]){
+                // if this prefix has metadata, augment the return with it
+                Object.keys(prefixMetadata[p]).forEach(function(key){
+                  if(!ret.metadata[u]){
+                    ret.metadata[u] = { prefix: {} };
+                  }
+                  ret.metadata[u].prefix[key] = prefixMetadata[p][key];
+                });
+              }
+            }
             return ret;
           },
           /^[0-9]/,
@@ -2724,6 +3101,7 @@ module.exports = (function() {
 
       helpers = require('../lib/helpers');
       prefixes = require('./prefixes.json');
+      prefixMetadata = require('./prefixMetadata.json');
       metrics = require('./metrics.json');
       multiply = helpers.multiply;
       topower = helpers.topower;
@@ -2750,15 +3128,16 @@ module.exports = (function() {
   };
 })();
 
-},{"../lib/helpers":6,"./metrics.json":2,"./prefixes.json":3}],5:[function(require,module,exports){
+},{"../lib/helpers":7,"./metrics.json":2,"./prefixMetadata.json":3,"./prefixes.json":4}],6:[function(require,module,exports){
 (function (global){
 global.ucum = require('../ucum.js');
 
-}).call(this,typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"../ucum.js":7}],6:[function(require,module,exports){
+}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+},{"../ucum.js":8}],7:[function(require,module,exports){
 module.exports = {
 
   multiply: function multiply(t, ms) {
+    //console.log("Multiply: ", JSON.stringify(t), JSON.stringify(ms));
     if (ms.length == 0) return t;
 
     var ret = t;
@@ -2768,15 +3147,31 @@ module.exports = {
       var b = mterm[1];
 
       ret.value *= Math.pow(b.value, sign);
+      //console.log("b = ", JSON.stringify(b));
+      //console.log("ret = ", JSON.stringify(ret));
       Object.keys(b.units).forEach(function(u){
         ret.units[u] = ret.units[u] || 0;
         ret.units[u] = ret.units[u] + sign*b.units[u];
+
+        if(!ret.metadata && b.metadata){
+          ret.metadata = {};
+          ret.metadata[u] = b.metadata[u];
+        }
+        else if(ret.metadata && b.metadata){
+          ret.metadata[u] = b.metadata[u];
+        }
+
         if (ret.units[u] == 0){
           delete ret.units[u];
+          if(ret.metadata) {
+            delete ret.metadata[u];
+          }
         }
       });
 
     });
+
+    //console.log("Multiply ret: ", ret);
     return ret;
   },
 
@@ -2797,7 +3192,7 @@ module.exports = {
         e.value *= Math.pow(10, e.units[k]);
         delete e.units[k];
       }
-    })
+    });
     return e;
   },
 
@@ -2808,7 +3203,7 @@ module.exports = {
   }
 }
 
-},{}],7:[function(require,module,exports){
+},{}],8:[function(require,module,exports){
 parser = require('./generated/ucum-parser.js');
 equivalents = require('./generated/equivalents.json');
 helpers = require('./lib/helpers.js');
@@ -2867,6 +3262,16 @@ function canonicalize(value, units){
     remaining = remainingNonBaseUnits(value);
   }
 
+  // we should remove any prefix metadata that exists at this point
+  // because it represents residual artifacts of the above process
+  if(value.metadata){
+    Object.keys(value.metadata).forEach(function(u){
+      if(value.metadata[u] && value.metadata[u].prefix){
+        delete value.metadata[u].prefix;
+      }
+    });
+  }
+
   return value;
 }
 
@@ -2895,4 +3300,4 @@ function convert(fromValue, fromUnits, toUnits){
 
 }
 
-},{"./generated/equivalents.json":1,"./generated/ucum-parser.js":4,"./lib/helpers.js":6}]},{},[5])
+},{"./generated/equivalents.json":1,"./generated/ucum-parser.js":5,"./lib/helpers.js":7}]},{},[6]);

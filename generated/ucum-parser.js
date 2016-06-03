@@ -73,8 +73,17 @@ module.exports = (function() {
             var ret = a;
             if (p){
               ret.value = ret.value * prefixes[p];
-                ret.metadata = {};
-                ret.metadata[Object.keys(ret.units)[0]] = {prefix: p};
+              ret.metadata = {};
+              var u = Object.keys(ret.units)[0];
+              if(prefixMetadata[p]){
+                // if this prefix has metadata, augment the return with it
+                Object.keys(prefixMetadata[p]).forEach(function(key){
+                  if(!ret.metadata[u]){
+                    ret.metadata[u] = { prefix: {} };
+                  }
+                  ret.metadata[u].prefix[key] = prefixMetadata[p][key];
+                });
+              }
             }
             return ret;
           },
@@ -1492,6 +1501,7 @@ module.exports = (function() {
 
       helpers = require('../lib/helpers');
       prefixes = require('./prefixes.json');
+      prefixMetadata = require('./prefixMetadata.json');
       metrics = require('./metrics.json');
       multiply = helpers.multiply;
       topower = helpers.topower;
