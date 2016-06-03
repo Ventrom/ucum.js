@@ -1,6 +1,7 @@
 {
   helpers = require('../lib/helpers');
   prefixes = require('./prefixes.json');
+  prefixMetadata = require('./prefixMetadata.json');
   metrics = require('./metrics.json');
   multiply = helpers.multiply;
   topower = helpers.topower;
@@ -36,7 +37,20 @@ exponent =  s:([+-])? d:DIGITS {return (s=="-") ? (-1*d) : d}
 
 simpleUnit =  p:PREFIX? a:METRICATOM !{return(p && !ismetric(a));} {
   var ret = a;
-  if (p) ret.value = ret.value * prefixes[p];
+  if (p){
+    ret.value = ret.value * prefixes[p];
+    ret.metadata = {};
+    var u = Object.keys(ret.units)[0];
+    if(prefixMetadata[p]){
+      // if this prefix has metadata, augment the return with it
+      Object.keys(prefixMetadata[p]).forEach(function(key){
+        if(!ret.metadata[u]){
+          ret.metadata[u] = { prefix: {} };
+        }
+        ret.metadata[u].prefix[key] = prefixMetadata[p][key];
+      });
+    }
+  }
   return ret;
 } / METRICATOM 
 

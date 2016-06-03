@@ -56,6 +56,16 @@ function canonicalize(value, units){
     remaining = remainingNonBaseUnits(value);
   }
 
+  // we should remove any prefix metadata that exists at this point
+  // because it represents residual artifacts of the above process
+  if(value.metadata){
+    Object.keys(value.metadata).forEach(function(u){
+      if(value.metadata[u] && value.metadata[u].prefix){
+        delete value.metadata[u].prefix;
+      }
+    });
+  }
+
   return value;
 }
 
