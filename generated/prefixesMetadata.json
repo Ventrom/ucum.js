@@ -1,0 +1,218 @@
+{
+  "Y": {
+    "CODE": "YA",
+    "names": [
+      "yotta"
+    ],
+    "printSymbols": [
+      "Y"
+    ]
+  },
+  "Z": {
+    "CODE": "ZA",
+    "names": [
+      "zetta"
+    ],
+    "printSymbols": [
+      "Z"
+    ]
+  },
+  "E": {
+    "CODE": "EX",
+    "names": [
+      "exa"
+    ],
+    "printSymbols": [
+      "E"
+    ]
+  },
+  "P": {
+    "CODE": "PT",
+    "names": [
+      "peta"
+    ],
+    "printSymbols": [
+      "P"
+    ]
+  },
+  "T": {
+    "CODE": "TR",
+    "names": [
+      "tera"
+    ],
+    "printSymbols": [
+      "T"
+    ]
+  },
+  "G": {
+    "CODE": "GA",
+    "names": [
+      "giga"
+    ],
+    "printSymbols": [
+      "G"
+    ]
+  },
+  "M": {
+    "CODE": "MA",
+    "names": [
+      "mega"
+    ],
+    "printSymbols": [
+      "M"
+    ]
+  },
+  "k": {
+    "CODE": "K",
+    "names": [
+      "kilo"
+    ],
+    "printSymbols": [
+      "k"
+    ]
+  },
+  "h": {
+    "CODE": "H",
+    "names": [
+      "hecto"
+    ],
+    "printSymbols": [
+      "h"
+    ]
+  },
+  "da": {
+    "CODE": "DA",
+    "names": [
+      "deka"
+    ],
+    "printSymbols": [
+      "da"
+    ]
+  },
+  "d": {
+    "CODE": "D",
+    "names": [
+      "deci"
+    ],
+    "printSymbols": [
+      "d"
+    ]
+  },
+  "c": {
+    "CODE": "C",
+    "names": [
+      "centi"
+    ],
+    "printSymbols": [
+      "c"
+    ]
+  },
+  "m": {
+    "CODE": "M",
+    "names": [
+      "milli"
+    ],
+    "printSymbols": [
+      "m"
+    ]
+  },
+  "u": {
+    "CODE": "U",
+    "names": [
+      "micro"
+    ],
+    "printSymbols": [
+      "&#956;"
+    ]
+  },
+  "n": {
+    "CODE": "N",
+    "names": [
+      "nano"
+    ],
+    "printSymbols": [
+      "n"
+    ]
+  },
+  "p": {
+    "CODE": "P",
+    "names": [
+      "pico"
+    ],
+    "printSymbols": [
+      "p"
+    ]
+  },
+  "f": {
+    "CODE": "F",
+    "names": [
+      "femto"
+    ],
+    "printSymbols": [
+      "f"
+    ]
+  },
+  "a": {
+    "CODE": "A",
+    "names": [
+      "atto"
+    ],
+    "printSymbols": [
+      "a"
+    ]
+  },
+  "z": {
+    "CODE": "ZO",
+    "names": [
+      "zepto"
+    ],
+    "printSymbols": [
+      "z"
+    ]
+  },
+  "y": {
+    "CODE": "YO",
+    "names": [
+      "yocto"
+    ],
+    "printSymbols": [
+      "y"
+    ]
+  },
+  "Ki": {
+    "CODE": "KIB",
+    "names": [
+      "kibi"
+    ],
+    "printSymbols": [
+      "Ki"
+    ]
+  },
+  "Mi": {
+    "CODE": "MIB",
+    "names": [
+      "mebi"
+    ],
+    "printSymbols": [
+      "Mi"
+    ]
+  },
+  "Gi": {
+    "CODE": "GIB",
+    "names": [
+      "gibi"
+    ],
+    "printSymbols": [
+      "Gi"
+    ]
+  },
+  "Ti": {
+    "CODE": "TIB",
+    "names": [
+      "tebi"
+    ],
+    "printSymbols": [
+      "Ti"
+    ]
+  }
+}
