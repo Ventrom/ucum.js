@@ -5762,5 +5762,96 @@
         "numeric": 1
       }
     ]
+  },
+  "m": {
+    "CODE": "M",
+    "dim": "L",
+    "names": [
+      "meter"
+    ],
+    "printSymbols": [
+      "m"
+    ],
+    "properties": [
+      "length"
+    ]
+  },
+  "s": {
+    "CODE": "S",
+    "dim": "T",
+    "names": [
+      "second"
+    ],
+    "printSymbols": [
+      "s"
+    ],
+    "properties": [
+      "time"
+    ]
+  },
+  "g": {
+    "CODE": "G",
+    "dim": "M",
+    "names": [
+      "gram"
+    ],
+    "printSymbols": [
+      "g"
+    ],
+    "properties": [
+      "mass"
+    ]
+  },
+  "rad": {
+    "CODE": "RAD",
+    "dim": "A",
+    "names": [
+      "radian"
+    ],
+    "printSymbols": [
+      "rad"
+    ],
+    "properties": [
+      "plane angle"
+    ]
+  },
+  "K": {
+    "CODE": "K",
+    "dim": "C",
+    "names": [
+      "Kelvin"
+    ],
+    "printSymbols": [
+      "K"
+    ],
+    "properties": [
+      "temperature"
+    ]
+  },
+  "C": {
+    "CODE": "C",
+    "dim": "Q",
+    "names": [
+      "Coulomb"
+    ],
+    "printSymbols": [
+      "C"
+    ],
+    "properties": [
+      "electric charge"
+    ]
+  },
+  "cd": {
+    "CODE": "CD",
+    "dim": "F",
+    "names": [
+      "candela"
+    ],
+    "printSymbols": [
+      "cd"
+    ],
+    "properties": [
+      "luminous intensity"
+    ]
   }
 }
