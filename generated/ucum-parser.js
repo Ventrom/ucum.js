@@ -71,7 +71,11 @@ module.exports = (function() {
           function(p, a) {return(p && !ismetric(a));},
           function(p, a) {
             var ret = a;
-            if (p) ret.value = ret.value * prefixes[p];
+            if (p){
+              ret.value = ret.value * prefixes[p];
+                ret.metadata = {};
+                ret.metadata[Object.keys(ret.units)[0]] = {prefix: p};
+            }
             return ret;
           },
           /^[0-9]/,

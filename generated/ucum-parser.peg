@@ -36,7 +36,11 @@ exponent =  s:([+-])? d:DIGITS {return (s=="-") ? (-1*d) : d}
 
 simpleUnit =  p:PREFIX? a:METRICATOM !{return(p && !ismetric(a));} {
   var ret = a;
-  if (p) ret.value = ret.value * prefixes[p];
+  if (p){
+    ret.value = ret.value * prefixes[p];
+      ret.metadata = {};
+      ret.metadata[Object.keys(ret.units)[0]] = {prefix: p};
+  }
   return ret;
 } / METRICATOM 
 
