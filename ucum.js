@@ -60,8 +60,15 @@ function canonicalize(value, units){
   // because it represents residual artifacts of the above process
   if(value.metadata){
     Object.keys(value.metadata).forEach(function(u){
-      if(value.metadata[u] && value.metadata[u].prefix){
-        delete value.metadata[u].prefix;
+      if(value.metadata[u]){
+        if(value.metadata[u].prefix) {
+          delete value.metadata[u].prefix;
+        }
+
+        // if it's not in the final array of units we should delete this metadata as well
+        if(Object.keys(value.units).indexOf(u) == -1){
+          delete value.metadata[u];
+        }
       }
     });
   }

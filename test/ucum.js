@@ -11,8 +11,8 @@ describe('Ucum parser', function(){
   it('Should parse units: kilometers per hour', function(){
     r = ucum.parse('km/h');
     r.should.eql({ value: 1000, units: { m: 1, h: -1 },
-      metadata: {
-        m: {
+      "metadata": {
+        "m": {
           "prefix": {
             "CODE": "K",
             "names": [
@@ -23,11 +23,42 @@ describe('Ucum parser', function(){
             ],
             "values": [
               {
-                "numeric": 1000,
-                "printable": "1 &#215; 10<sup>3</sup>"
+                "printable": "1 &#215; 10<sup>3</sup>",
+                "numeric": 1000
               }
             ]
-          }
+          },
+          "CODE": "M",
+          "dim": "L",
+          "names": [
+            "meter"
+          ],
+          "printSymbols": [
+            "m"
+          ],
+          "properties": [
+            "length"
+          ]
+        },
+        "h": {
+          "CODE": "HR",
+          "isMetric": "no",
+          "class": "iso1000",
+          "names": [
+            "hour"
+          ],
+          "printSymbols": [
+            "h"
+          ],
+          "properties": [
+            "time"
+          ],
+          "values": [
+            {
+              "printable": "60",
+              "numeric": 60
+            }
+          ]
         }
       }
     });
@@ -35,12 +66,36 @@ describe('Ucum parser', function(){
   it('Should canonicalize units: inches per year', function(){
     r = ucum.canonicalize('[in_i]/a');
     r.should.eql({ value: 8.048774304763354e-10, units: { m: 1, s: -1 },
-      metadata: {
-        m: {
-
+        "metadata": {
+          "m": {
+            "CODE": "M",
+            "dim": "L",
+            "names": [
+              "meter"
+            ],
+            "printSymbols": [
+              "m"
+            ],
+            "properties": [
+              "length"
+            ]
+          },
+          "s": {
+            "CODE": "S",
+            "dim": "T",
+            "names": [
+              "second"
+            ],
+            "printSymbols": [
+              "s"
+            ],
+            "properties": [
+              "time"
+            ]
+          }
         }
       }
-    });
+    );
   });
   it('Can "convert days"', function(){
     r = ucum.convert(1, 'd', 's');
