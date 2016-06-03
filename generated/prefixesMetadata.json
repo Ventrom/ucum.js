@@ -6,6 +6,12 @@
     ],
     "printSymbols": [
       "Y"
+    ],
+    "values": [
+      {
+        "printable": "1 &#215; 10<sup>24</sup>",
+        "numeric": 1e+24
+      }
     ]
   },
   "Z": {
@@ -15,6 +21,12 @@
     ],
     "printSymbols": [
       "Z"
+    ],
+    "values": [
+      {
+        "printable": "1 &#215; 10<sup>21</sup>",
+        "numeric": 1e+21
+      }
     ]
   },
   "E": {
@@ -24,6 +36,12 @@
     ],
     "printSymbols": [
       "E"
+    ],
+    "values": [
+      {
+        "printable": "1 &#215; 10<sup>18</sup>",
+        "numeric": 1000000000000000000
+      }
     ]
   },
   "P": {
@@ -33,6 +51,12 @@
     ],
     "printSymbols": [
       "P"
+    ],
+    "values": [
+      {
+        "printable": "1 &#215; 10<sup>15</sup>",
+        "numeric": 1000000000000000
+      }
     ]
   },
   "T": {
@@ -42,6 +66,12 @@
     ],
     "printSymbols": [
       "T"
+    ],
+    "values": [
+      {
+        "printable": "1 &#215; 10<sup>12</sup>",
+        "numeric": 1000000000000
+      }
     ]
   },
   "G": {
@@ -51,6 +81,12 @@
     ],
     "printSymbols": [
       "G"
+    ],
+    "values": [
+      {
+        "printable": "1 &#215; 10<sup>9</sup>",
+        "numeric": 1000000000
+      }
     ]
   },
   "M": {
@@ -60,6 +96,12 @@
     ],
     "printSymbols": [
       "M"
+    ],
+    "values": [
+      {
+        "printable": "1 &#215; 10<sup>6</sup>",
+        "numeric": 1000000
+      }
     ]
   },
   "k": {
@@ -69,6 +111,12 @@
     ],
     "printSymbols": [
       "k"
+    ],
+    "values": [
+      {
+        "printable": "1 &#215; 10<sup>3</sup>",
+        "numeric": 1000
+      }
     ]
   },
   "h": {
@@ -78,6 +126,12 @@
     ],
     "printSymbols": [
       "h"
+    ],
+    "values": [
+      {
+        "printable": "1 &#215; 10<sup>2</sup>",
+        "numeric": 100
+      }
     ]
   },
   "da": {
@@ -87,6 +141,12 @@
     ],
     "printSymbols": [
       "da"
+    ],
+    "values": [
+      {
+        "printable": "1 &#215; 10<sup>1</sup>",
+        "numeric": 10
+      }
     ]
   },
   "d": {
@@ -96,6 +156,12 @@
     ],
     "printSymbols": [
       "d"
+    ],
+    "values": [
+      {
+        "printable": "1 &#215; 10<sup>-1</sup>",
+        "numeric": 0.1
+      }
     ]
   },
   "c": {
@@ -105,6 +171,12 @@
     ],
     "printSymbols": [
       "c"
+    ],
+    "values": [
+      {
+        "printable": "1 &#215; 10<sup>-2</sup>",
+        "numeric": 0.01
+      }
     ]
   },
   "m": {
@@ -114,6 +186,12 @@
     ],
     "printSymbols": [
       "m"
+    ],
+    "values": [
+      {
+        "printable": "1 &#215; 10<sup>-3</sup>",
+        "numeric": 0.001
+      }
     ]
   },
   "u": {
@@ -123,6 +201,12 @@
     ],
     "printSymbols": [
       "&#956;"
+    ],
+    "values": [
+      {
+        "printable": "1 &#215; 10<sup>-6</sup>",
+        "numeric": 0.000001
+      }
     ]
   },
   "n": {
@@ -132,6 +216,12 @@
     ],
     "printSymbols": [
       "n"
+    ],
+    "values": [
+      {
+        "printable": "1 &#215; 10<sup>-9</sup>",
+        "numeric": 1e-9
+      }
     ]
   },
   "p": {
@@ -141,6 +231,12 @@
     ],
     "printSymbols": [
       "p"
+    ],
+    "values": [
+      {
+        "printable": "1 &#215; 10<sup>-12</sup>",
+        "numeric": 1e-12
+      }
     ]
   },
   "f": {
@@ -150,6 +246,12 @@
     ],
     "printSymbols": [
       "f"
+    ],
+    "values": [
+      {
+        "printable": "1 &#215; 10<sup>-15</sup>",
+        "numeric": 1e-15
+      }
     ]
   },
   "a": {
@@ -159,6 +261,12 @@
     ],
     "printSymbols": [
       "a"
+    ],
+    "values": [
+      {
+        "printable": "1 &#215; 10<sup>-18</sup>",
+        "numeric": 1e-18
+      }
     ]
   },
   "z": {
@@ -168,6 +276,12 @@
     ],
     "printSymbols": [
       "z"
+    ],
+    "values": [
+      {
+        "printable": "1 &#215; 10<sup>-21</sup>",
+        "numeric": 1e-21
+      }
     ]
   },
   "y": {
@@ -177,6 +291,12 @@
     ],
     "printSymbols": [
       "y"
+    ],
+    "values": [
+      {
+        "printable": "1 &#215; 10<sup>-24</sup>",
+        "numeric": 1e-24
+      }
     ]
   },
   "Ki": {
@@ -186,6 +306,12 @@
     ],
     "printSymbols": [
       "Ki"
+    ],
+    "values": [
+      {
+        "printable": "1024",
+        "numeric": 1024
+      }
     ]
   },
   "Mi": {
@@ -195,6 +321,12 @@
     ],
     "printSymbols": [
       "Mi"
+    ],
+    "values": [
+      {
+        "printable": "1048576",
+        "numeric": 1048576
+      }
     ]
   },
   "Gi": {
@@ -204,6 +336,12 @@
     ],
     "printSymbols": [
       "Gi"
+    ],
+    "values": [
+      {
+        "printable": "1073741824",
+        "numeric": 1073741824
+      }
     ]
   },
   "Ti": {
@@ -213,6 +351,12 @@
     ],
     "printSymbols": [
       "Ti"
+    ],
+    "values": [
+      {
+        "printable": "1099511627776",
+        "numeric": 1099511627776
+      }
     ]
   }
 }
