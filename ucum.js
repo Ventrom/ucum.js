@@ -5,7 +5,8 @@ helpers = require('./lib/helpers.js');
 module.exports = {
   parse: parse,
   canonicalize: canonicalize,
-  convert: convert
+  convert: convert,
+  print: print
 };
 
 function parse(value, units){
@@ -99,4 +100,46 @@ function convert(fromValue, fromUnits, toUnits){
 
  return fromc.value / toc.value;
 
+}
+
+function print(value, units, includeValue){
+  var obj;
+
+  if(typeof value === 'object'){
+    // treat it like a UCUM parse output
+    obj = value;
+  }
+  else{
+    // parse it first
+    obj = parse(value, units);
+  }
+
+  var units = Object.keys(obj.units);
+  var metadata = obj.metadata;
+  var numUnits = units.length;
+  var printableUnits = "";
+  units.forEach(function(unit, index){
+    var exponent = obj.units[unit];
+    var printable = metadata[unit].printSymbols[0];
+
+    if(exponent !== 1){
+      printableUnits += printable;
+      printableUnits += "<sup>";
+      printableUnits += exponent;
+      printableUnits += "</sup>";
+    }
+    else{
+      printableUnits += printable;
+    }
+
+    if((numUnits > 1) && (index != (numUnits - 1))){
+      printableUnits += "*";
+    }
+  });
+
+  if(includeValue){
+    printableUnits = obj.value + " " + printableUnits;
+  }
+
+  return printableUnits;
 }
