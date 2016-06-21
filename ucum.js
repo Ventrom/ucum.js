@@ -6,7 +6,7 @@ module.exports = {
   parse: parse,
   canonicalize: canonicalize,
   convert: convert,
-  print: print
+  format: format
 };
 
 function parse(value, units){
@@ -102,12 +102,27 @@ function convert(fromValue, fromUnits, toUnits){
 
 }
 
-function print(value, units, includeValue){
+// format returns a printable represetnation of the value
+// the resulting units are a single-line html rendering of the resultant units
+// can be invoked in the following supported ways, by example:
+// 1. ucum.format('[in_i]') -> 'in'
+// 2. ucum.format('[in_i]', true) -> '1 in'
+// 3. ucum.format(3, '[in_i]', true) -> '3 in'
+// 4. var x = ucum.parse(3, '[in_i]'); ucum.format(x) -> 'in'
+// 5. var x = ucum.parse(3, '[in_i]'); ucum.format(x, true) -> '3 in'
+function format(value, units, includeValue){
   var obj;
+
+  if(typeof value === 'string'){
+    includeValue = units;
+    units = value;
+    value = 1;
+  }
 
   if(typeof value === 'object'){
     // treat it like a UCUM parse output
     obj = value;
+    includeValue = units; // you would never provide units in this case, but you might provide includeValue
   }
   else{
     // parse it first

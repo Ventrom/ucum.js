@@ -103,7 +103,28 @@ describe('Ucum parser', function(){
   });
 });
 
-
+describe('Ucum formatting tests', function(){
+  it('Should format units: pound * inches / hour ^ 2 as string and do not print value', function(){
+    r = ucum.format('[lb_av].[in_i]/h/h');
+    r.should.eql('lb*in*h<sup>-2</sup>');
+  });
+  it('Should format units: pound * inches / hour ^ 2 as string and print value', function(){
+    r = ucum.format('[lb_av].[in_i]/h/h', true);
+    r.should.eql('1 lb*in*h<sup>-2</sup>');
+  });
+  it('Should format units: pound * inches / hour ^ 2 as string with value', function(){
+    r = ucum.format(3, '[lb_av].[in_i]/h/h', true);
+    r.should.eql('3 lb*in*h<sup>-2</sup>');
+  });
+  it('Should format units: pound * inches / hour ^ 2 as object and do not print value', function(){
+    r = ucum.format(ucum.parse(3, '[lb_av].[in_i]/h/h'));
+    r.should.eql('lb*in*h<sup>-2</sup>');
+  });
+  it('Should format units: pound * inches / hour ^ 2 as object and print value', function(){
+    r = ucum.format(ucum.parse(3, '[lb_av].[in_i]/h/h'), true);
+    r.should.eql('3 lb*in*h<sup>-2</sup>');
+  });
+});
 
 
 var skipForPrecision = ['3-113','3-115','3-118','3-119'];
