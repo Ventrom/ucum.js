@@ -10,11 +10,92 @@ describe('Ucum parser', function(){
   });
   it('Should parse units: kilometers per hour', function(){
     r = ucum.parse('km/h');
-    r.should.eql({ value: 1000, units: { m: 1, h: -1 } });
+    r.should.eql({ value: 1000, units: { m: 1, h: -1 },
+      "metadata": {
+        "m": {
+          "prefix": {
+            "CODE": "K",
+            "names": [
+              "kilo"
+            ],
+            "printSymbols": [
+              "k"
+            ],
+            "values": [
+              {
+                "printable": "1 &#215; 10<sup>3</sup>",
+                "numeric": 1000
+              }
+            ]
+          },
+          "CODE": "M",
+          "dim": "L",
+          "names": [
+            "meter"
+          ],
+          "printSymbols": [
+            "m"
+          ],
+          "properties": [
+            "length"
+          ]
+        },
+        "h": {
+          "CODE": "HR",
+          "isMetric": "no",
+          "class": "iso1000",
+          "names": [
+            "hour"
+          ],
+          "printSymbols": [
+            "h"
+          ],
+          "properties": [
+            "time"
+          ],
+          "values": [
+            {
+              "printable": "60",
+              "numeric": 60
+            }
+          ]
+        }
+      }
+    });
   });
   it('Should canonicalize units: inches per year', function(){
     r = ucum.canonicalize('[in_i]/a');
-    r.should.eql({ value: 8.048774304763354e-10, units: { m: 1, s: -1 } } );
+    r.should.eql({ value: 8.048774304763354e-10, units: { m: 1, s: -1 },
+        "metadata": {
+          "m": {
+            "CODE": "M",
+            "dim": "L",
+            "names": [
+              "meter"
+            ],
+            "printSymbols": [
+              "m"
+            ],
+            "properties": [
+              "length"
+            ]
+          },
+          "s": {
+            "CODE": "S",
+            "dim": "T",
+            "names": [
+              "second"
+            ],
+            "printSymbols": [
+              "s"
+            ],
+            "properties": [
+              "time"
+            ]
+          }
+        }
+      }
+    );
   });
   it('Can "convert days"', function(){
     r = ucum.convert(1, 'd', 's');
@@ -22,7 +103,28 @@ describe('Ucum parser', function(){
   });
 });
 
-
+describe('Ucum formatting tests', function(){
+  it('Should format units: pound * inches / hour ^ 2 as string and do not print value', function(){
+    r = ucum.format('[lb_av].[in_i]/h/h');
+    r.should.eql('lb*in*h<sup>-2</sup>');
+  });
+  it('Should format units: pound * inches / hour ^ 2 as string and print value', function(){
+    r = ucum.format('[lb_av].[in_i]/h/h', true);
+    r.should.eql('1 lb*in*h<sup>-2</sup>');
+  });
+  it('Should format units: pound * inches / hour ^ 2 as string with value', function(){
+    r = ucum.format(3, '[lb_av].[in_i]/h/h', true);
+    r.should.eql('3 lb*in*h<sup>-2</sup>');
+  });
+  it('Should format units: pound * inches / hour ^ 2 as object and do not print value', function(){
+    r = ucum.format(ucum.parse(3, '[lb_av].[in_i]/h/h'));
+    r.should.eql('lb*in*h<sup>-2</sup>');
+  });
+  it('Should format units: pound * inches / hour ^ 2 as object and print value', function(){
+    r = ucum.format(ucum.parse(3, '[lb_av].[in_i]/h/h'), true);
+    r.should.eql('3 lb*in*h<sup>-2</sup>');
+  });
+});
 
 
 var skipForPrecision = ['3-113','3-115','3-118','3-119'];
