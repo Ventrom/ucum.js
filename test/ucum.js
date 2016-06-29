@@ -106,24 +106,33 @@ describe('Ucum parser', function(){
 describe('Ucum formatting tests', function(){
   it('Should format units: pound * inches / hour ^ 2 as string and do not print value', function(){
     r = ucum.format('[lb_av].[in_i]/h/h');
-    r.should.eql('lb*in*h<sup>-2</sup>');
+    r.should.eql('lb*in/h<sup>2</sup>');
   });
   it('Should format units: pound * inches / hour ^ 2 as string and print value', function(){
     r = ucum.format('[lb_av].[in_i]/h/h', true);
-    r.should.eql('1 lb*in*h<sup>-2</sup>');
+    r.should.eql('1 lb*in/h<sup>2</sup>');
+  });
+  it('Should format units: km/ms as string and do not print value', function(){
+     r = ucum.format('km/ms');
+     r.should.eql('km/ms');
   });
   it('Should format units: pound * inches / hour ^ 2 as string with value', function(){
     r = ucum.format(3, '[lb_av].[in_i]/h/h', true);
-    r.should.eql('3 lb*in*h<sup>-2</sup>');
+    r.should.eql('3 lb*in/h<sup>2</sup>');
   });
   it('Should format units: pound * inches / hour ^ 2 as object and do not print value', function(){
     r = ucum.format(ucum.parse(3, '[lb_av].[in_i]/h/h'));
-    r.should.eql('lb*in*h<sup>-2</sup>');
+    r.should.eql('lb*in/h<sup>2</sup>');
   });
   it('Should format units: pound * inches / hour ^ 2 as object and print value', function(){
     r = ucum.format(ucum.parse(3, '[lb_av].[in_i]/h/h'), true);
-    r.should.eql('3 lb*in*h<sup>-2</sup>');
+    r.should.eql('3 lb*in/h<sup>2</sup>');
   });
+  it('Should format units: km/ms as object and do not print value', function(){
+     r = ucum.format(ucum.parse('km/ms'));
+     r.should.eql('km/ms');
+  });
+
 });
 
 
@@ -134,9 +143,9 @@ describe('Ucum functional tests', function(){
     it('Handles case ' + t.id + ': ' + t.unit + '==' + t.valid, function(){
       var parsed = false;
       try {
-        ucum.parse(t.unit);  
+        ucum.parse(t.unit);
         parsed = true;
-      } catch(e){ } 
+      } catch(e){ }
       if (parsed) {
         assert(t.valid === 'true');
       } else {
@@ -148,15 +157,14 @@ describe('Ucum functional tests', function(){
   tests.conversion.forEach(function(t){
     if (skipForPrecision.indexOf(t.id) !== -1){ return; }
     it('Handles case ' + t.id +
-      ': '+t.value + t.srcUnit + 
+      ': '+t.value + t.srcUnit +
       '->' + t.dstUnit+' = '+t.outcome,
     function(){
       var tin = parseFloat(t.value);
       var tout = parseFloat(t.outcome);
-      var r = ucum.convert(tin, t.srcUnit, t.dstUnit);  
+      var r = ucum.convert(tin, t.srcUnit, t.dstUnit);
       (r).should.be.approximately(tout,.0000000000001*tout);
     });
   });
 
 });
-
