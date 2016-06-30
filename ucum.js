@@ -132,25 +132,63 @@ function format(value, units, includeValue){
   var units = Object.keys(obj.units);
   var metadata = obj.metadata;
   var numUnits = units.length;
+  var numeratorUnits = [];
+  var denominatorUnits = [];
   var printableUnits = "";
+  
   units.forEach(function(unit, index){
     var exponent = obj.units[unit];
+    var absExponent = Math.abs(exponent);
     var printable = metadata[unit].printSymbols[0];
-
-    if(exponent !== 1){
-      printableUnits += printable;
-      printableUnits += "<sup>";
-      printableUnits += exponent;
-      printableUnits += "</sup>";
+    var prefix = metadata[unit].prefix ? metadata[unit].prefix.printSymbols[0] : "";
+    pUnit = prefix + printable;
+    if(absExponent !== 1){      
+      pUnit += "<sup>";
+      pUnit += Math.abs(exponent);
+      pUnit += "</sup>";
+    }
+    
+    if(exponent > 0){
+      numeratorUnits.push(pUnit);
     }
     else{
-      printableUnits += printable;
-    }
-
-    if((numUnits > 1) && (index != (numUnits - 1))){
-      printableUnits += "*";
+      denominatorUnits.push(pUnit);
     }
   });
+
+
+  if(numeratorUnits.length == 0){
+    printableUnits = "1";
+  }
+  else if(numeratorUnits.length == 1){
+    printableUnits = numeratorUnits[0];
+  }
+  else if(numeratorUnits.length > 1){
+    //printableUnits = "(";
+    numeratorUnits.forEach(function(unit, index){
+      printableUnits += unit;
+      if(index != (numeratorUnits.length - 1)){
+        printableUnits += "*";
+      }
+    });
+    //printableUnits += ")";
+  }
+  
+  if(denominatorUnits.length == 1){
+    printableUnits += "/";
+    printableUnits += denominatorUnits[0];
+  } 
+  else if(denominatorUnits.length > 1){
+    printableUnits += "/";
+    //printableUnits += "(";
+    denominatorUnits.forEach(function(unit, index){
+      printableUnits += unit;
+      if(index != (numeratorUnits.length - 1)){
+        printableUnits += "/";
+      }
+    });
+    //printableUnits += ")";
+  }
 
   if(includeValue){
     printableUnits = obj.value + " " + printableUnits;
