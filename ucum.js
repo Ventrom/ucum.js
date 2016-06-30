@@ -160,35 +160,15 @@ function format(value, units, includeValue){
   if(numeratorUnits.length == 0){
     printableUnits = "1";
   }
-  else if(numeratorUnits.length == 1){
-    printableUnits = numeratorUnits[0];
-  }
-  else if(numeratorUnits.length > 1){
-    //printableUnits = "(";
-    numeratorUnits.forEach(function(unit, index){
-      printableUnits += unit;
-      if(index != (numeratorUnits.length - 1)){
-        printableUnits += "*";
-      }
-    });
-    //printableUnits += ")";
+  else if(numeratorUnits.length > 0){
+    printableUnits = numeratorUnits.join("*");
   }
   
-  if(denominatorUnits.length == 1){
+  if(denominatorUnits.length > 0){
     printableUnits += "/";
-    printableUnits += denominatorUnits[0];
   } 
-  else if(denominatorUnits.length > 1){
-    printableUnits += "/";
-    //printableUnits += "(";
-    denominatorUnits.forEach(function(unit, index){
-      printableUnits += unit;
-      if(index != (numeratorUnits.length - 1)){
-        printableUnits += "/";
-      }
-    });
-    //printableUnits += ")";
-  }
+  
+  printableUnits += denominatorUnits.join("/");
 
   if(includeValue){
     printableUnits = obj.value + " " + printableUnits;
