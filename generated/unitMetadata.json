@@ -1,5 +1,6 @@
 {
   "10*": {
+    "isBase": false,
     "CODE": "10*",
     "isMetric": "no",
     "class": "dimless",
@@ -20,6 +21,7 @@
     ]
   },
   "10^": {
+    "isBase": false,
     "CODE": "10^",
     "isMetric": "no",
     "class": "dimless",
@@ -40,6 +42,7 @@
     ]
   },
   "[pi]": {
+    "isBase": false,
     "CODE": "[PI]",
     "isMetric": "no",
     "class": "dimless",
@@ -60,6 +63,7 @@
     ]
   },
   "%": {
+    "isBase": false,
     "CODE": "%",
     "isMetric": "no",
     "class": "dimless",
@@ -80,6 +84,7 @@
     ]
   },
   "[ppth]": {
+    "isBase": false,
     "CODE": "[PPTH]",
     "isMetric": "no",
     "class": "dimless",
@@ -100,6 +105,7 @@
     ]
   },
   "[ppm]": {
+    "isBase": false,
     "CODE": "[PPM]",
     "isMetric": "no",
     "class": "dimless",
@@ -120,6 +126,7 @@
     ]
   },
   "[ppb]": {
+    "isBase": false,
     "CODE": "[PPB]",
     "isMetric": "no",
     "class": "dimless",
@@ -140,6 +147,7 @@
     ]
   },
   "[pptr]": {
+    "isBase": false,
     "CODE": "[PPTR]",
     "isMetric": "no",
     "class": "dimless",
@@ -160,6 +168,7 @@
     ]
   },
   "mol": {
+    "isBase": false,
     "CODE": "MOL",
     "isMetric": "yes",
     "class": "si",
@@ -180,6 +189,7 @@
     ]
   },
   "sr": {
+    "isBase": false,
     "CODE": "SR",
     "isMetric": "yes",
     "class": "si",
@@ -200,6 +210,7 @@
     ]
   },
   "Hz": {
+    "isBase": false,
     "CODE": "HZ",
     "isMetric": "yes",
     "class": "si",
@@ -220,6 +231,7 @@
     ]
   },
   "N": {
+    "isBase": false,
     "CODE": "N",
     "isMetric": "yes",
     "class": "si",
@@ -240,6 +252,7 @@
     ]
   },
   "Pa": {
+    "isBase": false,
     "CODE": "PAL",
     "isMetric": "yes",
     "class": "si",
@@ -260,6 +273,7 @@
     ]
   },
   "J": {
+    "isBase": false,
     "CODE": "J",
     "isMetric": "yes",
     "class": "si",
@@ -280,6 +294,7 @@
     ]
   },
   "W": {
+    "isBase": false,
     "CODE": "W",
     "isMetric": "yes",
     "class": "si",
@@ -300,6 +315,7 @@
     ]
   },
   "A": {
+    "isBase": false,
     "CODE": "A",
     "isMetric": "yes",
     "class": "si",
@@ -320,6 +336,7 @@
     ]
   },
   "V": {
+    "isBase": false,
     "CODE": "V",
     "isMetric": "yes",
     "class": "si",
@@ -340,6 +357,7 @@
     ]
   },
   "F": {
+    "isBase": false,
     "CODE": "F",
     "isMetric": "yes",
     "class": "si",
@@ -360,6 +378,7 @@
     ]
   },
   "Ohm": {
+    "isBase": false,
     "CODE": "OHM",
     "isMetric": "yes",
     "class": "si",
@@ -380,6 +399,7 @@
     ]
   },
   "S": {
+    "isBase": false,
     "CODE": "SIE",
     "isMetric": "yes",
     "class": "si",
@@ -400,6 +420,7 @@
     ]
   },
   "Wb": {
+    "isBase": false,
     "CODE": "WB",
     "isMetric": "yes",
     "class": "si",
@@ -420,6 +441,7 @@
     ]
   },
   "Cel": {
+    "isBase": false,
     "CODE": "CEL",
     "isMetric": "yes",
     "isSpecial": "yes",
@@ -441,6 +463,7 @@
     ]
   },
   "T": {
+    "isBase": false,
     "CODE": "T",
     "isMetric": "yes",
     "class": "si",
@@ -461,6 +484,7 @@
     ]
   },
   "H": {
+    "isBase": false,
     "CODE": "H",
     "isMetric": "yes",
     "class": "si",
@@ -481,6 +505,7 @@
     ]
   },
   "lm": {
+    "isBase": false,
     "CODE": "LM",
     "isMetric": "yes",
     "class": "si",
@@ -501,6 +526,7 @@
     ]
   },
   "lx": {
+    "isBase": false,
     "CODE": "LX",
     "isMetric": "yes",
     "class": "si",
@@ -521,6 +547,7 @@
     ]
   },
   "Bq": {
+    "isBase": false,
     "CODE": "BQ",
     "isMetric": "yes",
     "class": "si",
@@ -541,6 +568,7 @@
     ]
   },
   "Gy": {
+    "isBase": false,
     "CODE": "GY",
     "isMetric": "yes",
     "class": "si",
@@ -561,6 +589,7 @@
     ]
   },
   "Sv": {
+    "isBase": false,
     "CODE": "SV",
     "isMetric": "yes",
     "class": "si",
@@ -581,6 +610,7 @@
     ]
   },
   "gon": {
+    "isBase": false,
     "CODE": "GON",
     "isMetric": "no",
     "class": "iso1000",
@@ -602,6 +632,7 @@
     ]
   },
   "deg": {
+    "isBase": false,
     "CODE": "DEG",
     "isMetric": "no",
     "class": "iso1000",
@@ -622,6 +653,7 @@
     ]
   },
   "'": {
+    "isBase": false,
     "CODE": "'",
     "isMetric": "no",
     "class": "iso1000",
@@ -642,6 +674,7 @@
     ]
   },
   "''": {
+    "isBase": false,
     "CODE": "''",
     "isMetric": "no",
     "class": "iso1000",
@@ -662,6 +695,7 @@
     ]
   },
   "l": {
+    "isBase": false,
     "CODE": "L",
     "isMetric": "yes",
     "class": "iso1000",
@@ -682,6 +716,7 @@
     ]
   },
   "L": {
+    "isBase": false,
     "isMetric": "yes",
     "class": "iso1000",
     "names": [
@@ -701,6 +736,7 @@
     ]
   },
   "ar": {
+    "isBase": false,
     "CODE": "AR",
     "isMetric": "yes",
     "class": "iso1000",
@@ -721,6 +757,7 @@
     ]
   },
   "min": {
+    "isBase": false,
     "CODE": "MIN",
     "isMetric": "no",
     "class": "iso1000",
@@ -741,6 +778,7 @@
     ]
   },
   "h": {
+    "isBase": false,
     "CODE": "HR",
     "isMetric": "no",
     "class": "iso1000",
@@ -761,6 +799,7 @@
     ]
   },
   "d": {
+    "isBase": false,
     "CODE": "D",
     "isMetric": "no",
     "class": "iso1000",
@@ -781,6 +820,7 @@
     ]
   },
   "a_t": {
+    "isBase": false,
     "CODE": "ANN_T",
     "isMetric": "no",
     "class": "iso1000",
@@ -801,6 +841,7 @@
     ]
   },
   "a_j": {
+    "isBase": false,
     "CODE": "ANN_J",
     "isMetric": "no",
     "class": "iso1000",
@@ -821,6 +862,7 @@
     ]
   },
   "a_g": {
+    "isBase": false,
     "CODE": "ANN_G",
     "isMetric": "no",
     "class": "iso1000",
@@ -841,6 +883,7 @@
     ]
   },
   "a": {
+    "isBase": false,
     "CODE": "ANN",
     "isMetric": "no",
     "class": "iso1000",
@@ -861,6 +904,7 @@
     ]
   },
   "wk": {
+    "isBase": false,
     "CODE": "WK",
     "isMetric": "no",
     "class": "iso1000",
@@ -881,6 +925,7 @@
     ]
   },
   "mo_s": {
+    "isBase": false,
     "CODE": "MO_S",
     "isMetric": "no",
     "class": "iso1000",
@@ -901,6 +946,7 @@
     ]
   },
   "mo_j": {
+    "isBase": false,
     "CODE": "MO_J",
     "isMetric": "no",
     "class": "iso1000",
@@ -921,6 +967,7 @@
     ]
   },
   "mo_g": {
+    "isBase": false,
     "CODE": "MO_G",
     "isMetric": "no",
     "class": "iso1000",
@@ -941,6 +988,7 @@
     ]
   },
   "mo": {
+    "isBase": false,
     "CODE": "MO",
     "isMetric": "no",
     "class": "iso1000",
@@ -961,6 +1009,7 @@
     ]
   },
   "t": {
+    "isBase": false,
     "CODE": "TNE",
     "isMetric": "yes",
     "class": "iso1000",
@@ -981,6 +1030,7 @@
     ]
   },
   "bar": {
+    "isBase": false,
     "CODE": "BAR",
     "isMetric": "yes",
     "class": "iso1000",
@@ -1001,6 +1051,7 @@
     ]
   },
   "u": {
+    "isBase": false,
     "CODE": "AMU",
     "isMetric": "yes",
     "class": "iso1000",
@@ -1021,6 +1072,7 @@
     ]
   },
   "eV": {
+    "isBase": false,
     "CODE": "EV",
     "isMetric": "yes",
     "class": "iso1000",
@@ -1041,6 +1093,7 @@
     ]
   },
   "AU": {
+    "isBase": false,
     "CODE": "ASU",
     "isMetric": "no",
     "class": "iso1000",
@@ -1061,6 +1114,7 @@
     ]
   },
   "pc": {
+    "isBase": false,
     "CODE": "PRS",
     "isMetric": "yes",
     "class": "iso1000",
@@ -1081,6 +1135,7 @@
     ]
   },
   "[c]": {
+    "isBase": false,
     "CODE": "[C]",
     "isMetric": "yes",
     "class": "const",
@@ -1101,6 +1156,7 @@
     ]
   },
   "[h]": {
+    "isBase": false,
     "CODE": "[H]",
     "isMetric": "yes",
     "class": "const",
@@ -1121,6 +1177,7 @@
     ]
   },
   "[k]": {
+    "isBase": false,
     "CODE": "[K]",
     "isMetric": "yes",
     "class": "const",
@@ -1141,6 +1198,7 @@
     ]
   },
   "[eps_0]": {
+    "isBase": false,
     "CODE": "[EPS_0]",
     "isMetric": "yes",
     "class": "const",
@@ -1161,6 +1219,7 @@
     ]
   },
   "[mu_0]": {
+    "isBase": false,
     "CODE": "[MU_0]",
     "isMetric": "yes",
     "class": "const",
@@ -1181,6 +1240,7 @@
     ]
   },
   "[e]": {
+    "isBase": false,
     "CODE": "[E]",
     "isMetric": "yes",
     "class": "const",
@@ -1201,6 +1261,7 @@
     ]
   },
   "[m_e]": {
+    "isBase": false,
     "CODE": "[M_E]",
     "isMetric": "yes",
     "class": "const",
@@ -1221,6 +1282,7 @@
     ]
   },
   "[m_p]": {
+    "isBase": false,
     "CODE": "[M_P]",
     "isMetric": "yes",
     "class": "const",
@@ -1241,6 +1303,7 @@
     ]
   },
   "[G]": {
+    "isBase": false,
     "CODE": "[GC]",
     "isMetric": "yes",
     "class": "const",
@@ -1261,6 +1324,7 @@
     ]
   },
   "[g]": {
+    "isBase": false,
     "CODE": "[G]",
     "isMetric": "yes",
     "class": "const",
@@ -1281,6 +1345,7 @@
     ]
   },
   "atm": {
+    "isBase": false,
     "CODE": "ATM",
     "isMetric": "no",
     "class": "const",
@@ -1301,6 +1366,7 @@
     ]
   },
   "[ly]": {
+    "isBase": false,
     "CODE": "[LY]",
     "isMetric": "yes",
     "class": "const",
@@ -1321,6 +1387,7 @@
     ]
   },
   "gf": {
+    "isBase": false,
     "CODE": "GF",
     "isMetric": "yes",
     "class": "const",
@@ -1341,6 +1408,7 @@
     ]
   },
   "[lbf_av]": {
+    "isBase": false,
     "CODE": "[LBF_AV]",
     "isMetric": "no",
     "class": "const",
@@ -1361,6 +1429,7 @@
     ]
   },
   "Ky": {
+    "isBase": false,
     "CODE": "KY",
     "isMetric": "yes",
     "class": "cgs",
@@ -1381,6 +1450,7 @@
     ]
   },
   "Gal": {
+    "isBase": false,
     "CODE": "GL",
     "isMetric": "yes",
     "class": "cgs",
@@ -1401,6 +1471,7 @@
     ]
   },
   "dyn": {
+    "isBase": false,
     "CODE": "DYN",
     "isMetric": "yes",
     "class": "cgs",
@@ -1421,6 +1492,7 @@
     ]
   },
   "erg": {
+    "isBase": false,
     "CODE": "ERG",
     "isMetric": "yes",
     "class": "cgs",
@@ -1441,6 +1513,7 @@
     ]
   },
   "P": {
+    "isBase": false,
     "CODE": "P",
     "isMetric": "yes",
     "class": "cgs",
@@ -1461,6 +1534,7 @@
     ]
   },
   "Bi": {
+    "isBase": false,
     "CODE": "BI",
     "isMetric": "yes",
     "class": "cgs",
@@ -1481,6 +1555,7 @@
     ]
   },
   "St": {
+    "isBase": false,
     "CODE": "ST",
     "isMetric": "yes",
     "class": "cgs",
@@ -1501,6 +1576,7 @@
     ]
   },
   "Mx": {
+    "isBase": false,
     "CODE": "MX",
     "isMetric": "yes",
     "class": "cgs",
@@ -1521,6 +1597,7 @@
     ]
   },
   "G": {
+    "isBase": false,
     "CODE": "GS",
     "isMetric": "yes",
     "class": "cgs",
@@ -1541,6 +1618,7 @@
     ]
   },
   "Oe": {
+    "isBase": false,
     "CODE": "OE",
     "isMetric": "yes",
     "class": "cgs",
@@ -1561,6 +1639,7 @@
     ]
   },
   "Gb": {
+    "isBase": false,
     "CODE": "GB",
     "isMetric": "yes",
     "class": "cgs",
@@ -1581,6 +1660,7 @@
     ]
   },
   "sb": {
+    "isBase": false,
     "CODE": "SB",
     "isMetric": "yes",
     "class": "cgs",
@@ -1601,6 +1681,7 @@
     ]
   },
   "Lmb": {
+    "isBase": false,
     "CODE": "LMB",
     "isMetric": "yes",
     "class": "cgs",
@@ -1621,6 +1702,7 @@
     ]
   },
   "ph": {
+    "isBase": false,
     "CODE": "PHT",
     "isMetric": "yes",
     "class": "cgs",
@@ -1641,6 +1723,7 @@
     ]
   },
   "Ci": {
+    "isBase": false,
     "CODE": "CI",
     "isMetric": "yes",
     "class": "cgs",
@@ -1661,6 +1744,7 @@
     ]
   },
   "R": {
+    "isBase": false,
     "CODE": "ROE",
     "isMetric": "yes",
     "class": "cgs",
@@ -1681,6 +1765,7 @@
     ]
   },
   "RAD": {
+    "isBase": false,
     "CODE": "[RAD]",
     "isMetric": "yes",
     "class": "cgs",
@@ -1701,6 +1786,7 @@
     ]
   },
   "REM": {
+    "isBase": false,
     "CODE": "[REM]",
     "isMetric": "yes",
     "class": "cgs",
@@ -1721,6 +1807,7 @@
     ]
   },
   "[in_i]": {
+    "isBase": false,
     "CODE": "[IN_I]",
     "isMetric": "no",
     "class": "intcust",
@@ -1741,6 +1828,7 @@
     ]
   },
   "[ft_i]": {
+    "isBase": false,
     "CODE": "[FT_I]",
     "isMetric": "no",
     "class": "intcust",
@@ -1761,6 +1849,7 @@
     ]
   },
   "[yd_i]": {
+    "isBase": false,
     "CODE": "[YD_I]",
     "isMetric": "no",
     "class": "intcust",
@@ -1781,6 +1870,7 @@
     ]
   },
   "[mi_i]": {
+    "isBase": false,
     "CODE": "[MI_I]",
     "isMetric": "no",
     "class": "intcust",
@@ -1801,6 +1891,7 @@
     ]
   },
   "[fth_i]": {
+    "isBase": false,
     "CODE": "[FTH_I]",
     "isMetric": "no",
     "class": "intcust",
@@ -1821,6 +1912,7 @@
     ]
   },
   "[nmi_i]": {
+    "isBase": false,
     "CODE": "[NMI_I]",
     "isMetric": "no",
     "class": "intcust",
@@ -1841,6 +1933,7 @@
     ]
   },
   "[kn_i]": {
+    "isBase": false,
     "CODE": "[KN_I]",
     "isMetric": "no",
     "class": "intcust",
@@ -1861,6 +1954,7 @@
     ]
   },
   "[sin_i]": {
+    "isBase": false,
     "CODE": "[SIN_I]",
     "isMetric": "no",
     "class": "intcust",
@@ -1878,6 +1972,7 @@
     ]
   },
   "[sft_i]": {
+    "isBase": false,
     "CODE": "[SFT_I]",
     "isMetric": "no",
     "class": "intcust",
@@ -1895,6 +1990,7 @@
     ]
   },
   "[syd_i]": {
+    "isBase": false,
     "CODE": "[SYD_I]",
     "isMetric": "no",
     "class": "intcust",
@@ -1912,6 +2008,7 @@
     ]
   },
   "[cin_i]": {
+    "isBase": false,
     "CODE": "[CIN_I]",
     "isMetric": "no",
     "class": "intcust",
@@ -1929,6 +2026,7 @@
     ]
   },
   "[cft_i]": {
+    "isBase": false,
     "CODE": "[CFT_I]",
     "isMetric": "no",
     "class": "intcust",
@@ -1946,6 +2044,7 @@
     ]
   },
   "[cyd_i]": {
+    "isBase": false,
     "CODE": "[CYD_I]",
     "isMetric": "no",
     "class": "intcust",
@@ -1966,6 +2065,7 @@
     ]
   },
   "[bf_i]": {
+    "isBase": false,
     "CODE": "[BF_I]",
     "isMetric": "no",
     "class": "intcust",
@@ -1983,6 +2083,7 @@
     ]
   },
   "[cr_i]": {
+    "isBase": false,
     "CODE": "[CR_I]",
     "isMetric": "no",
     "class": "intcust",
@@ -2000,6 +2101,7 @@
     ]
   },
   "[mil_i]": {
+    "isBase": false,
     "CODE": "[MIL_I]",
     "isMetric": "no",
     "class": "intcust",
@@ -2020,6 +2122,7 @@
     ]
   },
   "[cml_i]": {
+    "isBase": false,
     "CODE": "[CML_I]",
     "isMetric": "no",
     "class": "intcust",
@@ -2040,6 +2143,7 @@
     ]
   },
   "[hd_i]": {
+    "isBase": false,
     "CODE": "[HD_I]",
     "isMetric": "no",
     "class": "intcust",
@@ -2060,6 +2164,7 @@
     ]
   },
   "[ft_us]": {
+    "isBase": false,
     "CODE": "[FT_US]",
     "isMetric": "no",
     "class": "us-lengths",
@@ -2080,6 +2185,7 @@
     ]
   },
   "[yd_us]": {
+    "isBase": false,
     "CODE": "[YD_US]",
     "isMetric": "no",
     "class": "us-lengths",
@@ -2097,6 +2203,7 @@
     ]
   },
   "[in_us]": {
+    "isBase": false,
     "CODE": "[IN_US]",
     "isMetric": "no",
     "class": "us-lengths",
@@ -2114,6 +2221,7 @@
     ]
   },
   "[rd_us]": {
+    "isBase": false,
     "CODE": "[RD_US]",
     "isMetric": "no",
     "class": "us-lengths",
@@ -2131,6 +2239,7 @@
     ]
   },
   "[ch_us]": {
+    "isBase": false,
     "CODE": "[CH_US]",
     "isMetric": "no",
     "class": "us-lengths",
@@ -2149,6 +2258,7 @@
     ]
   },
   "[lk_us]": {
+    "isBase": false,
     "CODE": "[LK_US]",
     "isMetric": "no",
     "class": "us-lengths",
@@ -2166,6 +2276,7 @@
     ]
   },
   "[rch_us]": {
+    "isBase": false,
     "CODE": "[RCH_US]",
     "isMetric": "no",
     "class": "us-lengths",
@@ -2184,6 +2295,7 @@
     ]
   },
   "[rlk_us]": {
+    "isBase": false,
     "CODE": "[RLK_US]",
     "isMetric": "no",
     "class": "us-lengths",
@@ -2201,6 +2313,7 @@
     ]
   },
   "[fth_us]": {
+    "isBase": false,
     "CODE": "[FTH_US]",
     "isMetric": "no",
     "class": "us-lengths",
@@ -2218,6 +2331,7 @@
     ]
   },
   "[fur_us]": {
+    "isBase": false,
     "CODE": "[FUR_US]",
     "isMetric": "no",
     "class": "us-lengths",
@@ -2235,6 +2349,7 @@
     ]
   },
   "[mi_us]": {
+    "isBase": false,
     "CODE": "[MI_US]",
     "isMetric": "no",
     "class": "us-lengths",
@@ -2252,6 +2367,7 @@
     ]
   },
   "[acr_us]": {
+    "isBase": false,
     "CODE": "[ACR_US]",
     "isMetric": "no",
     "class": "us-lengths",
@@ -2269,6 +2385,7 @@
     ]
   },
   "[srd_us]": {
+    "isBase": false,
     "CODE": "[SRD_US]",
     "isMetric": "no",
     "class": "us-lengths",
@@ -2286,6 +2403,7 @@
     ]
   },
   "[smi_us]": {
+    "isBase": false,
     "CODE": "[SMI_US]",
     "isMetric": "no",
     "class": "us-lengths",
@@ -2303,6 +2421,7 @@
     ]
   },
   "[sct]": {
+    "isBase": false,
     "CODE": "[SCT]",
     "isMetric": "no",
     "class": "us-lengths",
@@ -2320,6 +2439,7 @@
     ]
   },
   "[twp]": {
+    "isBase": false,
     "CODE": "[TWP]",
     "isMetric": "no",
     "class": "us-lengths",
@@ -2337,6 +2457,7 @@
     ]
   },
   "[mil_us]": {
+    "isBase": false,
     "CODE": "[MIL_US]",
     "isMetric": "no",
     "class": "us-lengths",
@@ -2354,6 +2475,7 @@
     ]
   },
   "[in_br]": {
+    "isBase": false,
     "CODE": "[IN_BR]",
     "isMetric": "no",
     "class": "brit-length",
@@ -2371,6 +2493,7 @@
     ]
   },
   "[ft_br]": {
+    "isBase": false,
     "CODE": "[FT_BR]",
     "isMetric": "no",
     "class": "brit-length",
@@ -2388,6 +2511,7 @@
     ]
   },
   "[rd_br]": {
+    "isBase": false,
     "CODE": "[RD_BR]",
     "isMetric": "no",
     "class": "brit-length",
@@ -2405,6 +2529,7 @@
     ]
   },
   "[ch_br]": {
+    "isBase": false,
     "CODE": "[CH_BR]",
     "isMetric": "no",
     "class": "brit-length",
@@ -2422,6 +2547,7 @@
     ]
   },
   "[lk_br]": {
+    "isBase": false,
     "CODE": "[LK_BR]",
     "isMetric": "no",
     "class": "brit-length",
@@ -2439,6 +2565,7 @@
     ]
   },
   "[fth_br]": {
+    "isBase": false,
     "CODE": "[FTH_BR]",
     "isMetric": "no",
     "class": "brit-length",
@@ -2456,6 +2583,7 @@
     ]
   },
   "[pc_br]": {
+    "isBase": false,
     "CODE": "[PC_BR]",
     "isMetric": "no",
     "class": "brit-length",
@@ -2473,6 +2601,7 @@
     ]
   },
   "[yd_br]": {
+    "isBase": false,
     "CODE": "[YD_BR]",
     "isMetric": "no",
     "class": "brit-length",
@@ -2490,6 +2619,7 @@
     ]
   },
   "[mi_br]": {
+    "isBase": false,
     "CODE": "[MI_BR]",
     "isMetric": "no",
     "class": "brit-length",
@@ -2507,6 +2637,7 @@
     ]
   },
   "[nmi_br]": {
+    "isBase": false,
     "CODE": "[NMI_BR]",
     "isMetric": "no",
     "class": "brit-length",
@@ -2524,6 +2655,7 @@
     ]
   },
   "[kn_br]": {
+    "isBase": false,
     "CODE": "[KN_BR]",
     "isMetric": "no",
     "class": "brit-length",
@@ -2541,6 +2673,7 @@
     ]
   },
   "[acr_br]": {
+    "isBase": false,
     "CODE": "[ACR_BR]",
     "isMetric": "no",
     "class": "brit-length",
@@ -2558,6 +2691,7 @@
     ]
   },
   "[gal_us]": {
+    "isBase": false,
     "CODE": "[GAL_US]",
     "isMetric": "no",
     "class": "us-volumes",
@@ -2575,6 +2709,7 @@
     ]
   },
   "[bbl_us]": {
+    "isBase": false,
     "CODE": "[BBL_US]",
     "isMetric": "no",
     "class": "us-volumes",
@@ -2592,6 +2727,7 @@
     ]
   },
   "[qt_us]": {
+    "isBase": false,
     "CODE": "[QT_US]",
     "isMetric": "no",
     "class": "us-volumes",
@@ -2609,6 +2745,7 @@
     ]
   },
   "[pt_us]": {
+    "isBase": false,
     "CODE": "[PT_US]",
     "isMetric": "no",
     "class": "us-volumes",
@@ -2626,6 +2763,7 @@
     ]
   },
   "[gil_us]": {
+    "isBase": false,
     "CODE": "[GIL_US]",
     "isMetric": "no",
     "class": "us-volumes",
@@ -2643,6 +2781,7 @@
     ]
   },
   "[foz_us]": {
+    "isBase": false,
     "CODE": "[FOZ_US]",
     "isMetric": "no",
     "class": "us-volumes",
@@ -2663,6 +2802,7 @@
     ]
   },
   "[fdr_us]": {
+    "isBase": false,
     "CODE": "[FDR_US]",
     "isMetric": "no",
     "class": "us-volumes",
@@ -2680,6 +2820,7 @@
     ]
   },
   "[min_us]": {
+    "isBase": false,
     "CODE": "[MIN_US]",
     "isMetric": "no",
     "class": "us-volumes",
@@ -2697,6 +2838,7 @@
     ]
   },
   "[crd_us]": {
+    "isBase": false,
     "CODE": "[CRD_US]",
     "isMetric": "no",
     "class": "us-volumes",
@@ -2714,6 +2856,7 @@
     ]
   },
   "[bu_us]": {
+    "isBase": false,
     "CODE": "[BU_US]",
     "isMetric": "no",
     "class": "us-volumes",
@@ -2731,6 +2874,7 @@
     ]
   },
   "[gal_wi]": {
+    "isBase": false,
     "CODE": "[GAL_WI]",
     "isMetric": "no",
     "class": "us-volumes",
@@ -2748,6 +2892,7 @@
     ]
   },
   "[pk_us]": {
+    "isBase": false,
     "CODE": "[PK_US]",
     "isMetric": "no",
     "class": "us-volumes",
@@ -2765,6 +2910,7 @@
     ]
   },
   "[dqt_us]": {
+    "isBase": false,
     "CODE": "[DQT_US]",
     "isMetric": "no",
     "class": "us-volumes",
@@ -2782,6 +2928,7 @@
     ]
   },
   "[dpt_us]": {
+    "isBase": false,
     "CODE": "[DPT_US]",
     "isMetric": "no",
     "class": "us-volumes",
@@ -2799,6 +2946,7 @@
     ]
   },
   "[tbs_us]": {
+    "isBase": false,
     "CODE": "[TBS_US]",
     "isMetric": "no",
     "class": "us-volumes",
@@ -2816,6 +2964,7 @@
     ]
   },
   "[tsp_us]": {
+    "isBase": false,
     "CODE": "[TSP_US]",
     "isMetric": "no",
     "class": "us-volumes",
@@ -2833,6 +2982,7 @@
     ]
   },
   "[cup_us]": {
+    "isBase": false,
     "CODE": "[CUP_US]",
     "isMetric": "no",
     "class": "us-volumes",
@@ -2850,6 +3000,7 @@
     ]
   },
   "[foz_m]": {
+    "isBase": false,
     "CODE": "[FOZ_M]",
     "isMetric": "no",
     "class": "us-volumes",
@@ -2870,6 +3021,7 @@
     ]
   },
   "[cup_m]": {
+    "isBase": false,
     "CODE": "[CUP_M]",
     "isMetric": "no",
     "class": "us-volumes",
@@ -2887,6 +3039,7 @@
     ]
   },
   "[tsp_m]": {
+    "isBase": false,
     "CODE": "[TSP_M]",
     "isMetric": "no",
     "class": "us-volumes",
@@ -2904,6 +3057,7 @@
     ]
   },
   "[tbs_m]": {
+    "isBase": false,
     "CODE": "[TBS_M]",
     "isMetric": "no",
     "class": "us-volumes",
@@ -2921,6 +3075,7 @@
     ]
   },
   "[gal_br]": {
+    "isBase": false,
     "CODE": "[GAL_BR]",
     "isMetric": "no",
     "class": "brit-volumes",
@@ -2938,6 +3093,7 @@
     ]
   },
   "[pk_br]": {
+    "isBase": false,
     "CODE": "[PK_BR]",
     "isMetric": "no",
     "class": "brit-volumes",
@@ -2955,6 +3111,7 @@
     ]
   },
   "[bu_br]": {
+    "isBase": false,
     "CODE": "[BU_BR]",
     "isMetric": "no",
     "class": "brit-volumes",
@@ -2972,6 +3129,7 @@
     ]
   },
   "[qt_br]": {
+    "isBase": false,
     "CODE": "[QT_BR]",
     "isMetric": "no",
     "class": "brit-volumes",
@@ -2989,6 +3147,7 @@
     ]
   },
   "[pt_br]": {
+    "isBase": false,
     "CODE": "[PT_BR]",
     "isMetric": "no",
     "class": "brit-volumes",
@@ -3006,6 +3165,7 @@
     ]
   },
   "[gil_br]": {
+    "isBase": false,
     "CODE": "[GIL_BR]",
     "isMetric": "no",
     "class": "brit-volumes",
@@ -3023,6 +3183,7 @@
     ]
   },
   "[foz_br]": {
+    "isBase": false,
     "CODE": "[FOZ_BR]",
     "isMetric": "no",
     "class": "brit-volumes",
@@ -3040,6 +3201,7 @@
     ]
   },
   "[fdr_br]": {
+    "isBase": false,
     "CODE": "[FDR_BR]",
     "isMetric": "no",
     "class": "brit-volumes",
@@ -3057,6 +3219,7 @@
     ]
   },
   "[min_br]": {
+    "isBase": false,
     "CODE": "[MIN_BR]",
     "isMetric": "no",
     "class": "brit-volumes",
@@ -3074,6 +3237,7 @@
     ]
   },
   "[gr]": {
+    "isBase": false,
     "CODE": "[GR]",
     "isMetric": "no",
     "class": "avoirdupois",
@@ -3091,6 +3255,7 @@
     ]
   },
   "[lb_av]": {
+    "isBase": false,
     "CODE": "[LB_AV]",
     "isMetric": "no",
     "class": "avoirdupois",
@@ -3111,6 +3276,7 @@
     ]
   },
   "[oz_av]": {
+    "isBase": false,
     "CODE": "[OZ_AV]",
     "isMetric": "no",
     "class": "avoirdupois",
@@ -3131,6 +3297,7 @@
     ]
   },
   "[dr_av]": {
+    "isBase": false,
     "CODE": "[DR_AV]",
     "isMetric": "no",
     "class": "avoirdupois",
@@ -3148,6 +3315,7 @@
     ]
   },
   "[scwt_av]": {
+    "isBase": false,
     "CODE": "[SCWT_AV]",
     "isMetric": "no",
     "class": "avoirdupois",
@@ -3166,6 +3334,7 @@
     ]
   },
   "[lcwt_av]": {
+    "isBase": false,
     "CODE": "[LCWT_AV]",
     "isMetric": "no",
     "class": "avoirdupois",
@@ -3184,6 +3353,7 @@
     ]
   },
   "[ston_av]": {
+    "isBase": false,
     "CODE": "[STON_AV]",
     "isMetric": "no",
     "class": "avoirdupois",
@@ -3202,6 +3372,7 @@
     ]
   },
   "[lton_av]": {
+    "isBase": false,
     "CODE": "[LTON_AV]",
     "isMetric": "no",
     "class": "avoirdupois",
@@ -3220,6 +3391,7 @@
     ]
   },
   "[stone_av]": {
+    "isBase": false,
     "CODE": "[STONE_AV]",
     "isMetric": "no",
     "class": "avoirdupois",
@@ -3238,6 +3410,7 @@
     ]
   },
   "[pwt_tr]": {
+    "isBase": false,
     "CODE": "[PWT_TR]",
     "isMetric": "no",
     "class": "troy",
@@ -3255,6 +3428,7 @@
     ]
   },
   "[oz_tr]": {
+    "isBase": false,
     "CODE": "[OZ_TR]",
     "isMetric": "no",
     "class": "troy",
@@ -3272,6 +3446,7 @@
     ]
   },
   "[lb_tr]": {
+    "isBase": false,
     "CODE": "[LB_TR]",
     "isMetric": "no",
     "class": "troy",
@@ -3289,6 +3464,7 @@
     ]
   },
   "[sc_ap]": {
+    "isBase": false,
     "CODE": "[SC_AP]",
     "isMetric": "no",
     "class": "apoth",
@@ -3306,6 +3482,7 @@
     ]
   },
   "[dr_ap]": {
+    "isBase": false,
     "CODE": "[DR_AP]",
     "isMetric": "no",
     "class": "apoth",
@@ -3324,6 +3501,7 @@
     ]
   },
   "[oz_ap]": {
+    "isBase": false,
     "CODE": "[OZ_AP]",
     "isMetric": "no",
     "class": "apoth",
@@ -3341,6 +3519,7 @@
     ]
   },
   "[lb_ap]": {
+    "isBase": false,
     "CODE": "[LB_AP]",
     "isMetric": "no",
     "class": "apoth",
@@ -3358,6 +3537,7 @@
     ]
   },
   "[oz_m]": {
+    "isBase": false,
     "CODE": "[OZ_M]",
     "isMetric": "no",
     "class": "apoth",
@@ -3375,6 +3555,7 @@
     ]
   },
   "[lne]": {
+    "isBase": false,
     "CODE": "[LNE]",
     "isMetric": "no",
     "class": "typeset",
@@ -3392,6 +3573,7 @@
     ]
   },
   "[pnt]": {
+    "isBase": false,
     "CODE": "[PNT]",
     "isMetric": "no",
     "class": "typeset",
@@ -3409,6 +3591,7 @@
     ]
   },
   "[pca]": {
+    "isBase": false,
     "CODE": "[PCA]",
     "isMetric": "no",
     "class": "typeset",
@@ -3426,6 +3609,7 @@
     ]
   },
   "[pnt_pr]": {
+    "isBase": false,
     "CODE": "[PNT_PR]",
     "isMetric": "no",
     "class": "typeset",
@@ -3443,6 +3627,7 @@
     ]
   },
   "[pca_pr]": {
+    "isBase": false,
     "CODE": "[PCA_PR]",
     "isMetric": "no",
     "class": "typeset",
@@ -3460,6 +3645,7 @@
     ]
   },
   "[pied]": {
+    "isBase": false,
     "CODE": "[PIED]",
     "isMetric": "no",
     "class": "typeset",
@@ -3478,6 +3664,7 @@
     ]
   },
   "[pouce]": {
+    "isBase": false,
     "CODE": "[POUCE]",
     "isMetric": "no",
     "class": "typeset",
@@ -3496,6 +3683,7 @@
     ]
   },
   "[ligne]": {
+    "isBase": false,
     "CODE": "[LIGNE]",
     "isMetric": "no",
     "class": "typeset",
@@ -3514,6 +3702,7 @@
     ]
   },
   "[didot]": {
+    "isBase": false,
     "CODE": "[DIDOT]",
     "isMetric": "no",
     "class": "typeset",
@@ -3532,6 +3721,7 @@
     ]
   },
   "[cicero]": {
+    "isBase": false,
     "CODE": "[CICERO]",
     "isMetric": "no",
     "class": "typeset",
@@ -3550,6 +3740,7 @@
     ]
   },
   "[degF]": {
+    "isBase": false,
     "CODE": "[DEGF]",
     "isMetric": "no",
     "isSpecial": "yes",
@@ -3571,6 +3762,7 @@
     ]
   },
   "[degR]": {
+    "isBase": false,
     "CODE": "[degR]",
     "isMetric": "no",
     "class": "heat",
@@ -3591,6 +3783,7 @@
     ]
   },
   "cal_[15]": {
+    "isBase": false,
     "CODE": "CAL_[15]",
     "isMetric": "yes",
     "class": "heat",
@@ -3611,6 +3804,7 @@
     ]
   },
   "cal_[20]": {
+    "isBase": false,
     "CODE": "CAL_[20]",
     "isMetric": "yes",
     "class": "heat",
@@ -3631,6 +3825,7 @@
     ]
   },
   "cal_m": {
+    "isBase": false,
     "CODE": "CAL_M",
     "isMetric": "yes",
     "class": "heat",
@@ -3651,6 +3846,7 @@
     ]
   },
   "cal_IT": {
+    "isBase": false,
     "CODE": "CAL_IT",
     "isMetric": "yes",
     "class": "heat",
@@ -3671,6 +3867,7 @@
     ]
   },
   "cal_th": {
+    "isBase": false,
     "CODE": "CAL_TH",
     "isMetric": "yes",
     "class": "heat",
@@ -3691,6 +3888,7 @@
     ]
   },
   "cal": {
+    "isBase": false,
     "CODE": "CAL",
     "isMetric": "yes",
     "class": "heat",
@@ -3711,6 +3909,7 @@
     ]
   },
   "[Cal]": {
+    "isBase": false,
     "CODE": "[CAL]",
     "isMetric": "no",
     "class": "heat",
@@ -3731,6 +3930,7 @@
     ]
   },
   "[Btu_39]": {
+    "isBase": false,
     "CODE": "[BTU_39]",
     "isMetric": "no",
     "class": "heat",
@@ -3751,6 +3951,7 @@
     ]
   },
   "[Btu_59]": {
+    "isBase": false,
     "CODE": "[BTU_59]",
     "isMetric": "no",
     "class": "heat",
@@ -3771,6 +3972,7 @@
     ]
   },
   "[Btu_60]": {
+    "isBase": false,
     "CODE": "[BTU_60]",
     "isMetric": "no",
     "class": "heat",
@@ -3791,6 +3993,7 @@
     ]
   },
   "[Btu_m]": {
+    "isBase": false,
     "CODE": "[BTU_M]",
     "isMetric": "no",
     "class": "heat",
@@ -3811,6 +4014,7 @@
     ]
   },
   "[Btu_IT]": {
+    "isBase": false,
     "CODE": "[BTU_IT]",
     "isMetric": "no",
     "class": "heat",
@@ -3831,6 +4035,7 @@
     ]
   },
   "[Btu_th]": {
+    "isBase": false,
     "CODE": "[BTU_TH]",
     "isMetric": "no",
     "class": "heat",
@@ -3851,6 +4056,7 @@
     ]
   },
   "[Btu]": {
+    "isBase": false,
     "CODE": "[BTU]",
     "isMetric": "no",
     "class": "heat",
@@ -3871,6 +4077,7 @@
     ]
   },
   "[HP]": {
+    "isBase": false,
     "CODE": "[HP]",
     "isMetric": "no",
     "class": "heat",
@@ -3888,6 +4095,7 @@
     ]
   },
   "tex": {
+    "isBase": false,
     "CODE": "TEX",
     "isMetric": "yes",
     "class": "heat",
@@ -3908,6 +4116,7 @@
     ]
   },
   "[den]": {
+    "isBase": false,
     "CODE": "[DEN]",
     "isMetric": "no",
     "class": "heat",
@@ -3928,6 +4137,7 @@
     ]
   },
   "m[H2O]": {
+    "isBase": false,
     "CODE": "M[H2O]",
     "isMetric": "yes",
     "class": "clinical",
@@ -3948,6 +4158,7 @@
     ]
   },
   "m[Hg]": {
+    "isBase": false,
     "CODE": "M[HG]",
     "isMetric": "yes",
     "class": "clinical",
@@ -3968,6 +4179,7 @@
     ]
   },
   "[in_i'H2O]": {
+    "isBase": false,
     "CODE": "[IN_I'H2O]",
     "isMetric": "no",
     "class": "clinical",
@@ -3988,6 +4200,7 @@
     ]
   },
   "[in_i'Hg]": {
+    "isBase": false,
     "CODE": "[IN_I'HG]",
     "isMetric": "no",
     "class": "clinical",
@@ -4008,6 +4221,7 @@
     ]
   },
   "[PRU]": {
+    "isBase": false,
     "CODE": "[PRU]",
     "isMetric": "no",
     "class": "clinical",
@@ -4028,6 +4242,7 @@
     ]
   },
   "[wood'U]": {
+    "isBase": false,
     "CODE": "[WOOD'U]",
     "isMetric": "no",
     "class": "clinical",
@@ -4048,6 +4263,7 @@
     ]
   },
   "[diop]": {
+    "isBase": false,
     "CODE": "[DIOP]",
     "isMetric": "no",
     "class": "clinical",
@@ -4068,6 +4284,7 @@
     ]
   },
   "[p'diop]": {
+    "isBase": false,
     "CODE": "[P'DIOP]",
     "isMetric": "no",
     "isSpecial": "yes",
@@ -4089,6 +4306,7 @@
     ]
   },
   "%[slope]": {
+    "isBase": false,
     "CODE": "%[SLOPE]",
     "isMetric": "no",
     "isSpecial": "yes",
@@ -4110,6 +4328,7 @@
     ]
   },
   "[mesh_i]": {
+    "isBase": false,
     "CODE": "[MESH_I]",
     "isMetric": "no",
     "class": "clinical",
@@ -4127,6 +4346,7 @@
     ]
   },
   "[Ch]": {
+    "isBase": false,
     "CODE": "[CH]",
     "isMetric": "no",
     "class": "clinical",
@@ -4148,6 +4368,7 @@
     ]
   },
   "[drp]": {
+    "isBase": false,
     "CODE": "[DRP]",
     "isMetric": "no",
     "class": "clinical",
@@ -4168,6 +4389,7 @@
     ]
   },
   "[hnsf'U]": {
+    "isBase": false,
     "CODE": "[HNSF'U]",
     "isMetric": "no",
     "class": "clinical",
@@ -4188,6 +4410,7 @@
     ]
   },
   "[MET]": {
+    "isBase": false,
     "CODE": "[MET]",
     "isMetric": "no",
     "class": "clinical",
@@ -4208,6 +4431,7 @@
     ]
   },
   "[hp'_X]": {
+    "isBase": false,
     "CODE": "[HP'_X]",
     "isMetric": "no",
     "isSpecial": "yes",
@@ -4229,6 +4453,7 @@
     ]
   },
   "[hp'_C]": {
+    "isBase": false,
     "CODE": "[HP'_C]",
     "isMetric": "no",
     "isSpecial": "yes",
@@ -4250,6 +4475,7 @@
     ]
   },
   "[hp'_M]": {
+    "isBase": false,
     "CODE": "[HP'_M]",
     "isMetric": "no",
     "isSpecial": "yes",
@@ -4271,6 +4497,7 @@
     ]
   },
   "[hp'_Q]": {
+    "isBase": false,
     "CODE": "[HP'_Q]",
     "isMetric": "no",
     "isSpecial": "yes",
@@ -4292,6 +4519,7 @@
     ]
   },
   "[hp_X]": {
+    "isBase": false,
     "CODE": "[HP_X]",
     "isMetric": "no",
     "isArbitrary": "yes",
@@ -4313,6 +4541,7 @@
     ]
   },
   "[hp_C]": {
+    "isBase": false,
     "CODE": "[HP_C]",
     "isMetric": "no",
     "isArbitrary": "yes",
@@ -4334,6 +4563,7 @@
     ]
   },
   "[hp_M]": {
+    "isBase": false,
     "CODE": "[HP_M]",
     "isMetric": "no",
     "isArbitrary": "yes",
@@ -4355,6 +4585,7 @@
     ]
   },
   "[hp_Q]": {
+    "isBase": false,
     "CODE": "[HP_Q]",
     "isMetric": "no",
     "isArbitrary": "yes",
@@ -4376,6 +4607,7 @@
     ]
   },
   "[kp_X]": {
+    "isBase": false,
     "CODE": "[KP_X]",
     "isMetric": "no",
     "isArbitrary": "yes",
@@ -4397,6 +4629,7 @@
     ]
   },
   "[kp_C]": {
+    "isBase": false,
     "CODE": "[KP_C]",
     "isMetric": "no",
     "isArbitrary": "yes",
@@ -4418,6 +4651,7 @@
     ]
   },
   "[kp_M]": {
+    "isBase": false,
     "CODE": "[KP_M]",
     "isMetric": "no",
     "isArbitrary": "yes",
@@ -4439,6 +4673,7 @@
     ]
   },
   "[kp_Q]": {
+    "isBase": false,
     "CODE": "[KP_Q]",
     "isMetric": "no",
     "isArbitrary": "yes",
@@ -4460,6 +4695,7 @@
     ]
   },
   "eq": {
+    "isBase": false,
     "CODE": "EQ",
     "isMetric": "yes",
     "class": "chemical",
@@ -4480,6 +4716,7 @@
     ]
   },
   "osm": {
+    "isBase": false,
     "CODE": "OSM",
     "isMetric": "yes",
     "class": "chemical",
@@ -4500,6 +4737,7 @@
     ]
   },
   "[pH]": {
+    "isBase": false,
     "CODE": "[PH]",
     "isMetric": "no",
     "isSpecial": "yes",
@@ -4521,6 +4759,7 @@
     ]
   },
   "g%": {
+    "isBase": false,
     "CODE": "G%",
     "isMetric": "yes",
     "class": "chemical",
@@ -4541,6 +4780,7 @@
     ]
   },
   "[S]": {
+    "isBase": false,
     "CODE": "[S]",
     "isMetric": "no",
     "class": "chemical",
@@ -4561,6 +4801,7 @@
     ]
   },
   "[HPF]": {
+    "isBase": false,
     "CODE": "[HPF]",
     "isMetric": "no",
     "class": "chemical",
@@ -4581,6 +4822,7 @@
     ]
   },
   "[LPF]": {
+    "isBase": false,
     "CODE": "[LPF]",
     "isMetric": "no",
     "class": "chemical",
@@ -4601,6 +4843,7 @@
     ]
   },
   "kat": {
+    "isBase": false,
     "CODE": "KAT",
     "isMetric": "yes",
     "class": "chemical",
@@ -4621,6 +4864,7 @@
     ]
   },
   "U": {
+    "isBase": false,
     "CODE": "U",
     "isMetric": "yes",
     "class": "chemical",
@@ -4641,6 +4885,7 @@
     ]
   },
   "[iU]": {
+    "isBase": false,
     "CODE": "[IU]",
     "isMetric": "yes",
     "isArbitrary": "yes",
@@ -4662,6 +4907,7 @@
     ]
   },
   "[IU]": {
+    "isBase": false,
     "CODE": "[IU]",
     "isMetric": "yes",
     "isArbitrary": "yes",
@@ -4683,6 +4929,7 @@
     ]
   },
   "[arb'U]": {
+    "isBase": false,
     "CODE": "[ARB'U]",
     "isMetric": "no",
     "isArbitrary": "yes",
@@ -4704,6 +4951,7 @@
     ]
   },
   "[USP'U]": {
+    "isBase": false,
     "CODE": "[USP'U]",
     "isMetric": "no",
     "isArbitrary": "yes",
@@ -4725,6 +4973,7 @@
     ]
   },
   "[GPL'U]": {
+    "isBase": false,
     "CODE": "[GPL'U]",
     "isMetric": "no",
     "isArbitrary": "yes",
@@ -4743,6 +4992,7 @@
     ]
   },
   "[MPL'U]": {
+    "isBase": false,
     "CODE": "[MPL'U]",
     "isMetric": "no",
     "isArbitrary": "yes",
@@ -4761,6 +5011,7 @@
     ]
   },
   "[APL'U]": {
+    "isBase": false,
     "CODE": "[APL'U]",
     "isMetric": "no",
     "isArbitrary": "yes",
@@ -4779,6 +5030,7 @@
     ]
   },
   "[beth'U]": {
+    "isBase": false,
     "CODE": "[BETH'U]",
     "isMetric": "no",
     "isArbitrary": "yes",
@@ -4797,6 +5049,7 @@
     ]
   },
   "[anti'Xa'U]": {
+    "isBase": false,
     "CODE": "[ANTI'XA'U]",
     "isMetric": "no",
     "isArbitrary": "yes",
@@ -4815,6 +5068,7 @@
     ]
   },
   "[todd'U]": {
+    "isBase": false,
     "CODE": "[TODD'U]",
     "isMetric": "no",
     "isArbitrary": "yes",
@@ -4833,6 +5087,7 @@
     ]
   },
   "[dye'U]": {
+    "isBase": false,
     "CODE": "[DYE'U]",
     "isMetric": "no",
     "isArbitrary": "yes",
@@ -4851,6 +5106,7 @@
     ]
   },
   "[smgy'U]": {
+    "isBase": false,
     "CODE": "[SMGY'U]",
     "isMetric": "no",
     "isArbitrary": "yes",
@@ -4869,6 +5125,7 @@
     ]
   },
   "[bdsk'U]": {
+    "isBase": false,
     "CODE": "[BDSK'U]",
     "isMetric": "no",
     "isArbitrary": "yes",
@@ -4887,6 +5144,7 @@
     ]
   },
   "[ka'U]": {
+    "isBase": false,
     "CODE": "[KA'U]",
     "isMetric": "no",
     "isArbitrary": "yes",
@@ -4905,6 +5163,7 @@
     ]
   },
   "[knk'U]": {
+    "isBase": false,
     "CODE": "[KNK'U]",
     "isMetric": "no",
     "isArbitrary": "yes",
@@ -4923,6 +5182,7 @@
     ]
   },
   "[mclg'U]": {
+    "isBase": false,
     "CODE": "[MCLG'U]",
     "isMetric": "no",
     "isArbitrary": "yes",
@@ -4941,6 +5201,7 @@
     ]
   },
   "[tb'U]": {
+    "isBase": false,
     "CODE": "[TB'U]",
     "isMetric": "no",
     "isArbitrary": "yes",
@@ -4959,6 +5220,7 @@
     ]
   },
   "[CCID_50]": {
+    "isBase": false,
     "CODE": "[CCID_50]",
     "isMetric": "no",
     "isArbitrary": "yes",
@@ -4980,6 +5242,7 @@
     ]
   },
   "[TCID_50]": {
+    "isBase": false,
     "CODE": "[TCID_50]",
     "isMetric": "no",
     "isArbitrary": "yes",
@@ -5001,6 +5264,7 @@
     ]
   },
   "[EID_50]": {
+    "isBase": false,
     "CODE": "[EID_50]",
     "isMetric": "no",
     "isArbitrary": "yes",
@@ -5022,6 +5286,7 @@
     ]
   },
   "[PFU]": {
+    "isBase": false,
     "CODE": "[PFU]",
     "isMetric": "no",
     "isArbitrary": "yes",
@@ -5043,6 +5308,7 @@
     ]
   },
   "[FFU]": {
+    "isBase": false,
     "CODE": "[FFU]",
     "isMetric": "no",
     "isArbitrary": "yes",
@@ -5064,6 +5330,7 @@
     ]
   },
   "[CFU]": {
+    "isBase": false,
     "CODE": "[CFU]",
     "isMetric": "no",
     "isArbitrary": "yes",
@@ -5085,6 +5352,7 @@
     ]
   },
   "[BAU]": {
+    "isBase": false,
     "CODE": "[BAU]",
     "isMetric": "no",
     "isArbitrary": "yes",
@@ -5106,6 +5374,7 @@
     ]
   },
   "[AU]": {
+    "isBase": false,
     "CODE": "[AU]",
     "isMetric": "no",
     "isArbitrary": "yes",
@@ -5127,6 +5396,7 @@
     ]
   },
   "[Amb'a'1'U]": {
+    "isBase": false,
     "CODE": "[AMB'A'1'U]",
     "isMetric": "no",
     "isArbitrary": "yes",
@@ -5148,6 +5418,7 @@
     ]
   },
   "[PNU]": {
+    "isBase": false,
     "CODE": "[PNU]",
     "isMetric": "no",
     "isArbitrary": "yes",
@@ -5169,6 +5440,7 @@
     ]
   },
   "[Lf]": {
+    "isBase": false,
     "CODE": "[LF]",
     "isMetric": "no",
     "isArbitrary": "yes",
@@ -5190,6 +5462,7 @@
     ]
   },
   "[D'ag'U]": {
+    "isBase": false,
     "CODE": "[D'AG'U]",
     "isMetric": "no",
     "isArbitrary": "yes",
@@ -5211,6 +5484,7 @@
     ]
   },
   "[FEU]": {
+    "isBase": false,
     "CODE": "[FEU]",
     "isMetric": "no",
     "isArbitrary": "yes",
@@ -5232,6 +5506,7 @@
     ]
   },
   "[ELU]": {
+    "isBase": false,
     "CODE": "[ELU]",
     "isMetric": "no",
     "isArbitrary": "yes",
@@ -5253,6 +5528,7 @@
     ]
   },
   "[EU]": {
+    "isBase": false,
     "CODE": "[EU]",
     "isMetric": "no",
     "isArbitrary": "yes",
@@ -5274,6 +5550,7 @@
     ]
   },
   "Np": {
+    "isBase": false,
     "CODE": "NEP",
     "isMetric": "yes",
     "isSpecial": "yes",
@@ -5295,6 +5572,7 @@
     ]
   },
   "B": {
+    "isBase": false,
     "CODE": "B",
     "isMetric": "yes",
     "isSpecial": "yes",
@@ -5316,6 +5594,7 @@
     ]
   },
   "B[SPL]": {
+    "isBase": false,
     "CODE": "B[SPL]",
     "isMetric": "yes",
     "isSpecial": "yes",
@@ -5337,6 +5616,7 @@
     ]
   },
   "B[V]": {
+    "isBase": false,
     "CODE": "B[V]",
     "isMetric": "yes",
     "isSpecial": "yes",
@@ -5358,6 +5638,7 @@
     ]
   },
   "B[mV]": {
+    "isBase": false,
     "CODE": "B[MV]",
     "isMetric": "yes",
     "isSpecial": "yes",
@@ -5379,6 +5660,7 @@
     ]
   },
   "B[uV]": {
+    "isBase": false,
     "CODE": "B[UV]",
     "isMetric": "yes",
     "isSpecial": "yes",
@@ -5400,6 +5682,7 @@
     ]
   },
   "B[10.nV]": {
+    "isBase": false,
     "CODE": "B[10.NV]",
     "isMetric": "yes",
     "isSpecial": "yes",
@@ -5421,6 +5704,7 @@
     ]
   },
   "B[W]": {
+    "isBase": false,
     "CODE": "B[W]",
     "isMetric": "yes",
     "isSpecial": "yes",
@@ -5442,6 +5726,7 @@
     ]
   },
   "B[kW]": {
+    "isBase": false,
     "CODE": "B[KW]",
     "isMetric": "yes",
     "isSpecial": "yes",
@@ -5463,6 +5748,7 @@
     ]
   },
   "st": {
+    "isBase": false,
     "CODE": "STR",
     "isMetric": "yes",
     "class": "misc",
@@ -5483,6 +5769,7 @@
     ]
   },
   "Ao": {
+    "isBase": false,
     "CODE": "AO",
     "isMetric": "no",
     "class": "misc",
@@ -5503,6 +5790,7 @@
     ]
   },
   "b": {
+    "isBase": false,
     "CODE": "BRN",
     "isMetric": "no",
     "class": "misc",
@@ -5523,6 +5811,7 @@
     ]
   },
   "att": {
+    "isBase": false,
     "CODE": "ATT",
     "isMetric": "no",
     "class": "misc",
@@ -5543,6 +5832,7 @@
     ]
   },
   "mho": {
+    "isBase": false,
     "CODE": "MHO",
     "isMetric": "yes",
     "class": "misc",
@@ -5563,6 +5853,7 @@
     ]
   },
   "[psi]": {
+    "isBase": false,
     "CODE": "[PSI]",
     "isMetric": "no",
     "class": "misc",
@@ -5583,6 +5874,7 @@
     ]
   },
   "circ": {
+    "isBase": false,
     "CODE": "CIRC",
     "isMetric": "no",
     "class": "misc",
@@ -5603,6 +5895,7 @@
     ]
   },
   "sph": {
+    "isBase": false,
     "CODE": "SPH",
     "isMetric": "no",
     "class": "misc",
@@ -5623,6 +5916,7 @@
     ]
   },
   "[car_m]": {
+    "isBase": false,
     "CODE": "[CAR_M]",
     "isMetric": "no",
     "class": "misc",
@@ -5643,6 +5937,7 @@
     ]
   },
   "[car_Au]": {
+    "isBase": false,
     "CODE": "[CAR_AU]",
     "isMetric": "no",
     "class": "misc",
@@ -5663,6 +5958,7 @@
     ]
   },
   "[smoot]": {
+    "isBase": false,
     "CODE": "[SMOOT]",
     "isMetric": "no",
     "class": "misc",
@@ -5683,6 +5979,7 @@
     ]
   },
   "bit_s": {
+    "isBase": false,
     "CODE": "BIT_S",
     "isMetric": "no",
     "isSpecial": "yes",
@@ -5704,6 +6001,7 @@
     ]
   },
   "bit": {
+    "isBase": false,
     "CODE": "BIT",
     "isMetric": "yes",
     "class": "infotech",
@@ -5724,6 +6022,7 @@
     ]
   },
   "By": {
+    "isBase": false,
     "CODE": "BY",
     "isMetric": "yes",
     "class": "infotech",
@@ -5744,6 +6043,7 @@
     ]
   },
   "Bd": {
+    "isBase": false,
     "CODE": "BD",
     "isMetric": "yes",
     "class": "infotech",
@@ -5764,6 +6064,7 @@
     ]
   },
   "m": {
+    "isBase": true,
     "CODE": "M",
     "dim": "L",
     "names": [
@@ -5777,6 +6078,7 @@
     ]
   },
   "s": {
+    "isBase": true,
     "CODE": "S",
     "dim": "T",
     "names": [
@@ -5790,6 +6092,7 @@
     ]
   },
   "g": {
+    "isBase": true,
     "CODE": "G",
     "dim": "M",
     "names": [
@@ -5803,6 +6106,7 @@
     ]
   },
   "rad": {
+    "isBase": true,
     "CODE": "RAD",
     "dim": "A",
     "names": [
@@ -5816,6 +6120,7 @@
     ]
   },
   "K": {
+    "isBase": true,
     "CODE": "K",
     "dim": "C",
     "names": [
@@ -5829,6 +6134,7 @@
     ]
   },
   "C": {
+    "isBase": true,
     "CODE": "C",
     "dim": "Q",
     "names": [
@@ -5842,6 +6148,7 @@
     ]
   },
   "cd": {
+    "isBase": true,
     "CODE": "CD",
     "dim": "F",
     "names": [
