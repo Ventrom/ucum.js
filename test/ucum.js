@@ -13,6 +13,7 @@ describe('Ucum parser', function(){
     r.should.eql({ value: 1000, units: { m: 1, h: -1 },
       "metadata": {
         "m": {
+          "isBase": true,
           "prefix": {
             "CODE": "K",
             "names": [
@@ -42,6 +43,7 @@ describe('Ucum parser', function(){
         },
         "h": {
           "CODE": "HR",
+          "isBase": false,
           "isMetric": "no",
           "class": "iso1000",
           "names": [
@@ -68,6 +70,7 @@ describe('Ucum parser', function(){
     r.should.eql({ value: 8.048774304763354e-10, units: { m: 1, s: -1 },
         "metadata": {
           "m": {
+            "isBase": true,
             "CODE": "M",
             "dim": "L",
             "names": [
@@ -81,6 +84,7 @@ describe('Ucum parser', function(){
             ]
           },
           "s": {
+            "isBase": true,
             "CODE": "S",
             "dim": "T",
             "names": [
