@@ -9083,12 +9083,14 @@ module.exports = {
 parser = require('./generated/ucum-parser.js');
 equivalents = require('./generated/equivalents.json');
 helpers = require('./lib/helpers.js');
+unitMetadata = require('./generated/unitMetadata.json');
 
 module.exports = {
   parse: parse,
   canonicalize: canonicalize,
   convert: convert,
-  format: format
+  format: format,
+  unitQuery: unitQuery
 };
 
 function parse(value, units){
@@ -9184,7 +9186,7 @@ function convert(fromValue, fromUnits, toUnits){
 
 }
 
-// format returns a printable represetnation of the value
+// format returns a printable representation of the value
 // the resulting units are a single-line html rendering of the resultant units
 // can be invoked in the following supported ways, by example:
 // 1. ucum.format('[in_i]') -> 'in'
@@ -9214,25 +9216,43 @@ function format(value, units, includeValue){
   var units = Object.keys(obj.units);
   var metadata = obj.metadata;
   var numUnits = units.length;
+  var numeratorUnits = [];
+  var denominatorUnits = [];
   var printableUnits = "";
+  
   units.forEach(function(unit, index){
     var exponent = obj.units[unit];
-    var printable = metadata[unit].printSymbols[0];
-
-    if(exponent !== 1){
-      printableUnits += printable;
-      printableUnits += "<sup>";
-      printableUnits += exponent;
-      printableUnits += "</sup>";
+    var absExponent = Math.abs(exponent);
+    var printable = metadata[unit].printSymbols ? metadata[unit].printSymbols[0] : metadata[unit].names[0];
+    var prefix = metadata[unit].prefix ? metadata[unit].prefix.printSymbols[0] : "";
+    pUnit = prefix + printable;
+    if(absExponent !== 1){      
+      pUnit += "<sup>";
+      pUnit += Math.abs(exponent);
+      pUnit += "</sup>";
+    }
+    
+    if(exponent > 0){
+      numeratorUnits.push(pUnit);
     }
     else{
-      printableUnits += printable;
-    }
-
-    if((numUnits > 1) && (index != (numUnits - 1))){
-      printableUnits += "*";
+      denominatorUnits.push(pUnit);
     }
   });
+
+
+  if(numeratorUnits.length == 0){
+    printableUnits = "1";
+  }
+  else if(numeratorUnits.length > 0){
+    printableUnits = numeratorUnits.join("*");
+  }
+  
+  if(denominatorUnits.length > 0){
+    printableUnits += "/";
+  } 
+  
+  printableUnits += denominatorUnits.join("/");
 
   if(includeValue){
     printableUnits = obj.value + " " + printableUnits;
@@ -9240,4 +9260,53 @@ function format(value, units, includeValue){
 
   return printableUnits;
 }
-},{"./generated/equivalents.json":1,"./generated/ucum-parser.js":5,"./lib/helpers.js":8}]},{},[7]);
+
+// searches the unit metadata for all unit metadata
+// criteria is an object like
+//   { properties: 'area', isMetric: 'yes' }
+// where the key/value pairs form a logical intersection, i.e. all criteria must be met
+// resultFields is an array to pre-reduce the result set fields
+function unitQuery(criteria, resultFields){
+  return Object.keys(unitMetadata).filter((unit) => {
+    var keys = Object.keys(criteria);
+    for(var ii = 0; ii < keys.length; ii++){
+      var key = keys[ii];
+      var val = unitMetadata[unit][key];
+      var value = criteria[key];
+      if(val && (typeof val === 'object')){
+        // it's a list of values, it's a match if the target value occurs in the list
+        if(val.indexOf(value) === -1){
+          return false;
+        }
+      }
+      else{
+        // it's a non-object, make a direct comparison
+        if(unitMetadata[unit][key] !== value){
+          return false;
+        }
+      }
+    }
+    return true;
+  }).map((key) => {
+    var obj = {};
+    if(resultFields){
+      if(resultFields.length) {
+        obj[key] = {};
+        resultFields.forEach((field) => {
+          if (unitMetadata[key][field]) {
+            obj[key][field] = JSON.parse(JSON.stringify(unitMetadata[key][field]));
+          }
+        });
+      }
+      else{
+        // just return the keys if an empty array gets passed for resultSet
+        obj = key;
+      }
+    }
+    else{
+      obj[key] = JSON.parse(JSON.stringify(unitMetadata[key]));
+    }
+    return obj;
+  });
+}
+},{"./generated/equivalents.json":1,"./generated/ucum-parser.js":5,"./generated/unitMetadata.json":6,"./lib/helpers.js":8}]},{},[7]);

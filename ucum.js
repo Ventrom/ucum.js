@@ -141,7 +141,7 @@ function format(value, units, includeValue){
   units.forEach(function(unit, index){
     var exponent = obj.units[unit];
     var absExponent = Math.abs(exponent);
-    var printable = metadata[unit].printSymbols[0];
+    var printable = metadata[unit].printSymbols ? metadata[unit].printSymbols[0] : metadata[unit].names[0];
     var prefix = metadata[unit].prefix ? metadata[unit].prefix.printSymbols[0] : "";
     pUnit = prefix + printable;
     if(absExponent !== 1){      
