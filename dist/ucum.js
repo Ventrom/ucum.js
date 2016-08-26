@@ -9600,7 +9600,7 @@ function unitQuery(criteria, resultFields){
       if(resultFields.length) {
         obj[key] = {};
         resultFields.forEach((field) => {
-          if (unitMetadata[key][field]) {
+          if (unitMetadata[key][field] !== undefined) {
             obj[key][field] = JSON.parse(JSON.stringify(unitMetadata[key][field]));
           }
         });
