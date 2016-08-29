@@ -1907,7 +1907,7 @@ module.exports = (function() {
           function(u) {return {"value": 1, "units": {"[cicero]": 1}, "metadata": {"[cicero]":{"isBase":false,"CODE":"[CICERO]","isMetric":"no","class":"typeset","names":["cicero","Didot's pica"],"properties":["length"],"values":[{"printable":"12","numeric":12}]}}};},
           "[pwt_tr]",
           { type: "literal", value: "[pwt_tr]", description: "\"[pwt_tr]\"" },
-          function(u) {return {"value": 1, "units": {"[pwt_tr]": 1}, "metadata": {"[pwt_tr]":{"isBase":false,"CODE":"[PWT_TR]","isMetric":"no","class":"troy","names":["pennyweight"],"properties":["mass"],"values":[{"printable":"24","numeric":24}]}}};},
+          function(u) {return {"value": 1, "units": {"[pwt_tr]": 1}, "metadata": {"[pwt_tr]":{"isBase":false,"CODE":"[PWT_TR]","isMetric":"no","class":"troy","names":["pennyweight"],"printSymbols":["dwt"],"properties":["mass"],"values":[{"printable":"24","numeric":24}]}}};},
           "[pnt_pr]",
           { type: "literal", value: "[pnt_pr]", description: "\"[pnt_pr]\"" },
           function(u) {return {"value": 1, "units": {"[pnt_pr]": 1}, "metadata": {"[pnt_pr]":{"isBase":false,"CODE":"[PNT_PR]","isMetric":"no","class":"typeset","names":["Printer's point"],"properties":["length"],"values":[{"printable":"0.013837","numeric":0.013837}]}}};},
@@ -1928,16 +1928,16 @@ module.exports = (function() {
           function(u) {return {"value": 1, "units": {"[tbs_m]": 1}, "metadata": {"[tbs_m]":{"isBase":false,"CODE":"[TBS_M]","isMetric":"no","class":"us-volumes","names":["metric tablespoon"],"properties":["volume"],"values":[{"printable":"15","numeric":15}]}}};},
           "[lb_ap]",
           { type: "literal", value: "[lb_ap]", description: "\"[lb_ap]\"" },
-          function(u) {return {"value": 1, "units": {"[lb_ap]": 1}, "metadata": {"[lb_ap]":{"isBase":false,"CODE":"[LB_AP]","isMetric":"no","class":"apoth","names":["pound"],"properties":["mass"],"values":[{"printable":"12","numeric":12}]}}};},
+          function(u) {return {"value": 1, "units": {"[lb_ap]": 1}, "metadata": {"[lb_ap]":{"isBase":false,"CODE":"[LB_AP]","isMetric":"no","class":"apoth","names":["pound"],"printSymbols":["<strike>lb</strike>"],"properties":["mass"],"values":[{"printable":"12","numeric":12}]}}};},
           "[oz_ap]",
           { type: "literal", value: "[oz_ap]", description: "\"[oz_ap]\"" },
-          function(u) {return {"value": 1, "units": {"[oz_ap]": 1}, "metadata": {"[oz_ap]":{"isBase":false,"CODE":"[OZ_AP]","isMetric":"no","class":"apoth","names":["ounce"],"properties":["mass"],"values":[{"printable":"8","numeric":8}]}}};},
+          function(u) {return {"value": 1, "units": {"[oz_ap]": 1}, "metadata": {"[oz_ap]":{"isBase":false,"CODE":"[OZ_AP]","isMetric":"no","class":"apoth","names":["ounce"],"printSymbols":["&#8485;"],"properties":["mass"],"values":[{"printable":"8","numeric":8}]}}};},
           "[dr_ap]",
           { type: "literal", value: "[dr_ap]", description: "\"[dr_ap]\"" },
-          function(u) {return {"value": 1, "units": {"[dr_ap]": 1}, "metadata": {"[dr_ap]":{"isBase":false,"CODE":"[DR_AP]","isMetric":"no","class":"apoth","names":["dram","drachm"],"properties":["mass"],"values":[{"printable":"3","numeric":3}]}}};},
+          function(u) {return {"value": 1, "units": {"[dr_ap]": 1}, "metadata": {"[dr_ap]":{"isBase":false,"CODE":"[DR_AP]","isMetric":"no","class":"apoth","names":["dram","drachm"],"printSymbols":["&#658;"],"properties":["mass"],"values":[{"printable":"3","numeric":3}]}}};},
           "[sc_ap]",
           { type: "literal", value: "[sc_ap]", description: "\"[sc_ap]\"" },
-          function(u) {return {"value": 1, "units": {"[sc_ap]": 1}, "metadata": {"[sc_ap]":{"isBase":false,"CODE":"[SC_AP]","isMetric":"no","class":"apoth","names":["scruple"],"properties":["mass"],"values":[{"printable":"20","numeric":20}]}}};},
+          function(u) {return {"value": 1, "units": {"[sc_ap]": 1}, "metadata": {"[sc_ap]":{"isBase":false,"CODE":"[SC_AP]","isMetric":"no","class":"apoth","names":["scruple"],"printSymbols":["&#8456;"],"properties":["mass"],"values":[{"printable":"20","numeric":20}]}}};},
           "[tsp_m]",
           { type: "literal", value: "[tsp_m]", description: "\"[tsp_m]\"" },
           function(u) {return {"value": 1, "units": {"[tsp_m]": 1}, "metadata": {"[tsp_m]":{"isBase":false,"CODE":"[TSP_M]","isMetric":"no","class":"us-volumes","names":["metric teaspoon"],"properties":["volume"],"values":[{"printable":"5","numeric":5}]}}};},
@@ -1946,10 +1946,10 @@ module.exports = (function() {
           function(u) {return {"value": 1, "units": {"[cup_m]": 1}, "metadata": {"[cup_m]":{"isBase":false,"CODE":"[CUP_M]","isMetric":"no","class":"us-volumes","names":["metric cup"],"properties":["volume"],"values":[{"printable":"240","numeric":240}]}}};},
           "[lb_tr]",
           { type: "literal", value: "[lb_tr]", description: "\"[lb_tr]\"" },
-          function(u) {return {"value": 1, "units": {"[lb_tr]": 1}, "metadata": {"[lb_tr]":{"isBase":false,"CODE":"[LB_TR]","isMetric":"no","class":"troy","names":["pound"],"properties":["mass"],"values":[{"printable":"12","numeric":12}]}}};},
+          function(u) {return {"value": 1, "units": {"[lb_tr]": 1}, "metadata": {"[lb_tr]":{"isBase":false,"CODE":"[LB_TR]","isMetric":"no","class":"troy","names":["troy pound"],"printSymbols":["lb t"],"properties":["mass"],"values":[{"printable":"12","numeric":12}]}}};},
           "[oz_tr]",
           { type: "literal", value: "[oz_tr]", description: "\"[oz_tr]\"" },
-          function(u) {return {"value": 1, "units": {"[oz_tr]": 1}, "metadata": {"[oz_tr]":{"isBase":false,"CODE":"[OZ_TR]","isMetric":"no","class":"troy","names":["ounce"],"properties":["mass"],"values":[{"printable":"20","numeric":20}]}}};},
+          function(u) {return {"value": 1, "units": {"[oz_tr]": 1}, "metadata": {"[oz_tr]":{"isBase":false,"CODE":"[OZ_TR]","isMetric":"no","class":"troy","names":["troy ounce"],"printSymbols":["oz t"],"properties":["mass"],"values":[{"printable":"20","numeric":20}]}}};},
           "[didot]",
           { type: "literal", value: "[didot]", description: "\"[didot]\"" },
           function(u) {return {"value": 1, "units": {"[didot]": 1}, "metadata": {"[didot]":{"isBase":false,"CODE":"[DIDOT]","isMetric":"no","class":"typeset","names":["didot","Didot's point"],"properties":["length"],"values":[{"printable":"1","numeric":1}]}}};},
@@ -6487,7 +6487,7 @@ module.exports={
     "isMetric": "no",
     "class": "avoirdupois",
     "names": [
-      "long hunderdweight",
+      "long hundredweight",
       "British hundredweight"
     ],
     "properties": [
@@ -6565,6 +6565,9 @@ module.exports={
     "names": [
       "pennyweight"
     ],
+    "printSymbols": [
+      "dwt"
+    ],
     "properties": [
       "mass"
     ],
@@ -6581,7 +6584,10 @@ module.exports={
     "isMetric": "no",
     "class": "troy",
     "names": [
-      "ounce"
+      "troy ounce"
+    ],
+    "printSymbols": [
+      "oz t"
     ],
     "properties": [
       "mass"
@@ -6599,7 +6605,10 @@ module.exports={
     "isMetric": "no",
     "class": "troy",
     "names": [
-      "pound"
+      "troy pound"
+    ],
+    "printSymbols": [
+      "lb t"
     ],
     "properties": [
       "mass"
@@ -6618,6 +6627,9 @@ module.exports={
     "class": "apoth",
     "names": [
       "scruple"
+    ],
+    "printSymbols": [
+      "&#8456;"
     ],
     "properties": [
       "mass"
@@ -6638,6 +6650,9 @@ module.exports={
       "dram",
       "drachm"
     ],
+    "printSymbols": [
+      "&#658;"
+    ],
     "properties": [
       "mass"
     ],
@@ -6656,6 +6671,9 @@ module.exports={
     "names": [
       "ounce"
     ],
+    "printSymbols": [
+      "&#8485;"
+    ],
     "properties": [
       "mass"
     ],
@@ -6673,6 +6691,9 @@ module.exports={
     "class": "apoth",
     "names": [
       "pound"
+    ],
+    "printSymbols": [
+      "<strike>lb</strike>"
     ],
     "properties": [
       "mass"

@@ -3339,7 +3339,7 @@
     "isMetric": "no",
     "class": "avoirdupois",
     "names": [
-      "long hunderdweight",
+      "long hundredweight",
       "British hundredweight"
     ],
     "properties": [
@@ -3417,6 +3417,9 @@
     "names": [
       "pennyweight"
     ],
+    "printSymbols": [
+      "dwt"
+    ],
     "properties": [
       "mass"
     ],
@@ -3433,7 +3436,10 @@
     "isMetric": "no",
     "class": "troy",
     "names": [
-      "ounce"
+      "troy ounce"
+    ],
+    "printSymbols": [
+      "oz t"
     ],
     "properties": [
       "mass"
@@ -3451,7 +3457,10 @@
     "isMetric": "no",
     "class": "troy",
     "names": [
-      "pound"
+      "troy pound"
+    ],
+    "printSymbols": [
+      "lb t"
     ],
     "properties": [
       "mass"
@@ -3470,6 +3479,9 @@
     "class": "apoth",
     "names": [
       "scruple"
+    ],
+    "printSymbols": [
+      "&#8456;"
     ],
     "properties": [
       "mass"
@@ -3490,6 +3502,9 @@
       "dram",
       "drachm"
     ],
+    "printSymbols": [
+      "&#658;"
+    ],
     "properties": [
       "mass"
     ],
@@ -3508,6 +3523,9 @@
     "names": [
       "ounce"
     ],
+    "printSymbols": [
+      "&#8485;"
+    ],
     "properties": [
       "mass"
     ],
@@ -3525,6 +3543,9 @@
     "class": "apoth",
     "names": [
       "pound"
+    ],
+    "printSymbols": [
+      "<strike>lb</strike>"
     ],
     "properties": [
       "mass"

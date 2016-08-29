@@ -1166,7 +1166,7 @@
       <value Unit="[lb_av]" UNIT="[LB_AV]" value="100">100</value>
    </unit>
    <unit xmlns="" Code="[lcwt_av]" CODE="[LCWT_AV]" isMetric="no" class="avoirdupois">
-      <name>long hunderdweight</name>
+      <name>long hundredweight</name>
       <name>British hundredweight</name>
       <property>mass</property>
       <value Unit="[lb_av]" UNIT="[LB_AV]" value="112">112</value>
@@ -1191,37 +1191,44 @@
    </unit>
    <unit xmlns="" Code="[pwt_tr]" CODE="[PWT_TR]" isMetric="no" class="troy">
       <name>pennyweight</name>
+      <printSymbol>dwt</printSymbol>
       <property>mass</property>
       <value Unit="[gr]" UNIT="[GR]" value="24">24</value>
    </unit>
    <unit xmlns="" Code="[oz_tr]" CODE="[OZ_TR]" isMetric="no" class="troy">
-      <name>ounce</name>
+      <name>troy ounce</name>
+      <printSymbol>oz t</printSymbol>
       <property>mass</property>
       <value Unit="[pwt_tr]" UNIT="[PWT_TR]" value="20">20</value>
    </unit>
    <unit xmlns="" Code="[lb_tr]" CODE="[LB_TR]" isMetric="no" class="troy">
-      <name>pound</name>
+      <name>troy pound</name>
+      <printSymbol>lb t</printSymbol>
       <property>mass</property>
       <value Unit="[oz_tr]" UNIT="[OZ_TR]" value="12">12</value>
    </unit>
    <unit xmlns="" Code="[sc_ap]" CODE="[SC_AP]" isMetric="no" class="apoth">
       <name>scruple</name>
+      <printSymbol>&#8456;</printSymbol>
       <property>mass</property>
       <value Unit="[gr]" UNIT="[GR]" value="20">20</value>
    </unit>
    <unit xmlns="" Code="[dr_ap]" CODE="[DR_AP]" isMetric="no" class="apoth">
       <name>dram</name>
       <name>drachm</name>
+      <printSymbol>&#658;</printSymbol>
       <property>mass</property>
       <value Unit="[sc_ap]" UNIT="[SC_AP]" value="3">3</value>
    </unit>
    <unit xmlns="" Code="[oz_ap]" CODE="[OZ_AP]" isMetric="no" class="apoth">
       <name>ounce</name>
+      <printSymbol>&#8485;</printSymbol>
       <property>mass</property>
       <value Unit="[dr_ap]" UNIT="[DR_AP]" value="8">8</value>
    </unit>
    <unit xmlns="" Code="[lb_ap]" CODE="[LB_AP]" isMetric="no" class="apoth">
       <name>pound</name>
+      <printSymbol><strike>lb</strike></printSymbol>
       <property>mass</property>
       <value Unit="[oz_ap]" UNIT="[OZ_AP]" value="12">12</value>
    </unit>
