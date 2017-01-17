@@ -36,13 +36,13 @@ Save and include a `<script>` tag for [dist/ucum.js](dist/ucum.js)
 ### To use in Node.js
 
 ```
-npm install ucum.js
+npm install ucum
 ```
 
 ### To build
 
 ```
-$ git clone https://github.com/jmandel/ucum.js
+$ git clone https://github.com/Ventrom/ucum.js
 $ cd ucum.js
 $ npm install
 $ make
