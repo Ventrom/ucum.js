@@ -88,7 +88,7 @@ function conformant(a, b){
       ret = false;
     }
   });
-  
+
   return ret;
 }
 
@@ -137,19 +137,19 @@ function format(value, units, includeValue){
   var numeratorUnits = [];
   var denominatorUnits = [];
   var printableUnits = "";
-  
+
   units.forEach(function(unit, index){
     var exponent = obj.units[unit];
     var absExponent = Math.abs(exponent);
     var printable = metadata[unit].printSymbols ? metadata[unit].printSymbols[0] : metadata[unit].names[0];
     var prefix = metadata[unit].prefix ? metadata[unit].prefix.printSymbols[0] : "";
     pUnit = prefix + printable;
-    if(absExponent !== 1){      
+    if(absExponent !== 1){
       pUnit += "<sup>";
       pUnit += Math.abs(exponent);
       pUnit += "</sup>";
     }
-    
+
     if(exponent > 0){
       numeratorUnits.push(pUnit);
     }
@@ -165,11 +165,11 @@ function format(value, units, includeValue){
   else if(numeratorUnits.length > 0){
     printableUnits = numeratorUnits.join("*");
   }
-  
+
   if(denominatorUnits.length > 0){
     printableUnits += "/";
-  } 
-  
+  }
+
   printableUnits += denominatorUnits.join("/");
 
   if(includeValue){
@@ -185,7 +185,7 @@ function format(value, units, includeValue){
 // where the key/value pairs form a logical intersection, i.e. all criteria must be met
 // resultFields is an array to pre-reduce the result set fields
 function unitQuery(criteria, resultFields){
-  return Object.keys(unitMetadata).filter((unit) => {
+  return Object.keys(unitMetadata).filter(function(unit){
     var keys = Object.keys(criteria);
     for(var ii = 0; ii < keys.length; ii++){
       var key = keys[ii];
@@ -205,12 +205,12 @@ function unitQuery(criteria, resultFields){
       }
     }
     return true;
-  }).map((key) => {
+  }).map(function(key){
     var obj = {};
     if(resultFields){
       if(resultFields.length) {
         obj[key] = {};
-        resultFields.forEach((field) => {
+        resultFields.forEach(function(field){
           if (unitMetadata[key][field] !== undefined) {
             obj[key][field] = JSON.parse(JSON.stringify(unitMetadata[key][field]));
           }
