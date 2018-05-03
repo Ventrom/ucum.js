@@ -1,4 +1,4 @@
-(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+(function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 module.exports={
   "10*": {
     "value": 10,
@@ -1745,7 +1745,7 @@ module.exports = (function() {
           function(u) {return {"value": 1, "units": {"[scwt_av]": 1}, "metadata": {"[scwt_av]":{"isBase":false,"CODE":"[SCWT_AV]","isMetric":"no","class":"avoirdupois","names":["short hundredweight","U.S. hundredweight"],"properties":["mass"],"values":[{"printable":"100","numeric":100}]}}};},
           "[lcwt_av]",
           { type: "literal", value: "[lcwt_av]", description: "\"[lcwt_av]\"" },
-          function(u) {return {"value": 1, "units": {"[lcwt_av]": 1}, "metadata": {"[lcwt_av]":{"isBase":false,"CODE":"[LCWT_AV]","isMetric":"no","class":"avoirdupois","names":["long hunderdweight","British hundredweight"],"properties":["mass"],"values":[{"printable":"112","numeric":112}]}}};},
+          function(u) {return {"value": 1, "units": {"[lcwt_av]": 1}, "metadata": {"[lcwt_av]":{"isBase":false,"CODE":"[LCWT_AV]","isMetric":"no","class":"avoirdupois","names":["long hundredweight","British hundredweight"],"properties":["mass"],"values":[{"printable":"112","numeric":112}]}}};},
           "[lton_av]",
           { type: "literal", value: "[lton_av]", description: "\"[lton_av]\"" },
           function(u) {return {"value": 1, "units": {"[lton_av]": 1}, "metadata": {"[lton_av]":{"isBase":false,"CODE":"[LTON_AV]","isMetric":"no","class":"avoirdupois","names":["long ton","British ton"],"properties":["mass"],"values":[{"printable":"20","numeric":20}]}}};},
@@ -9498,7 +9498,7 @@ function conformant(a, b){
       ret = false;
     }
   });
-  
+
   return ret;
 }
 
@@ -9547,19 +9547,19 @@ function format(value, units, includeValue){
   var numeratorUnits = [];
   var denominatorUnits = [];
   var printableUnits = "";
-  
+
   units.forEach(function(unit, index){
     var exponent = obj.units[unit];
     var absExponent = Math.abs(exponent);
     var printable = metadata[unit].printSymbols ? metadata[unit].printSymbols[0] : metadata[unit].names[0];
     var prefix = metadata[unit].prefix ? metadata[unit].prefix.printSymbols[0] : "";
     pUnit = prefix + printable;
-    if(absExponent !== 1){      
+    if(absExponent !== 1){
       pUnit += "<sup>";
       pUnit += Math.abs(exponent);
       pUnit += "</sup>";
     }
-    
+
     if(exponent > 0){
       numeratorUnits.push(pUnit);
     }
@@ -9575,11 +9575,11 @@ function format(value, units, includeValue){
   else if(numeratorUnits.length > 0){
     printableUnits = numeratorUnits.join("*");
   }
-  
+
   if(denominatorUnits.length > 0){
     printableUnits += "/";
-  } 
-  
+  }
+
   printableUnits += denominatorUnits.join("/");
 
   if(includeValue){
@@ -9595,7 +9595,7 @@ function format(value, units, includeValue){
 // where the key/value pairs form a logical intersection, i.e. all criteria must be met
 // resultFields is an array to pre-reduce the result set fields
 function unitQuery(criteria, resultFields){
-  return Object.keys(unitMetadata).filter((unit) => {
+  return Object.keys(unitMetadata).filter(function(unit){
     var keys = Object.keys(criteria);
     for(var ii = 0; ii < keys.length; ii++){
       var key = keys[ii];
@@ -9615,12 +9615,12 @@ function unitQuery(criteria, resultFields){
       }
     }
     return true;
-  }).map((key) => {
+  }).map(function(key){
     var obj = {};
     if(resultFields){
       if(resultFields.length) {
         obj[key] = {};
-        resultFields.forEach((field) => {
+        resultFields.forEach(function(field){
           if (unitMetadata[key][field] !== undefined) {
             obj[key][field] = JSON.parse(JSON.stringify(unitMetadata[key][field]));
           }

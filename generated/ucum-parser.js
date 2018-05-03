@@ -145,7 +145,7 @@ module.exports = (function() {
           function(u) {return {"value": 1, "units": {"[scwt_av]": 1}, "metadata": {"[scwt_av]":{"isBase":false,"CODE":"[SCWT_AV]","isMetric":"no","class":"avoirdupois","names":["short hundredweight","U.S. hundredweight"],"properties":["mass"],"values":[{"printable":"100","numeric":100}]}}};},
           "[lcwt_av]",
           { type: "literal", value: "[lcwt_av]", description: "\"[lcwt_av]\"" },
-          function(u) {return {"value": 1, "units": {"[lcwt_av]": 1}, "metadata": {"[lcwt_av]":{"isBase":false,"CODE":"[LCWT_AV]","isMetric":"no","class":"avoirdupois","names":["long hunderdweight","British hundredweight"],"properties":["mass"],"values":[{"printable":"112","numeric":112}]}}};},
+          function(u) {return {"value": 1, "units": {"[lcwt_av]": 1}, "metadata": {"[lcwt_av]":{"isBase":false,"CODE":"[LCWT_AV]","isMetric":"no","class":"avoirdupois","names":["long hundredweight","British hundredweight"],"properties":["mass"],"values":[{"printable":"112","numeric":112}]}}};},
           "[lton_av]",
           { type: "literal", value: "[lton_av]", description: "\"[lton_av]\"" },
           function(u) {return {"value": 1, "units": {"[lton_av]": 1}, "metadata": {"[lton_av]":{"isBase":false,"CODE":"[LTON_AV]","isMetric":"no","class":"avoirdupois","names":["long ton","British ton"],"properties":["mass"],"values":[{"printable":"20","numeric":20}]}}};},
